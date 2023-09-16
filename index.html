@@ -1,1 +1,109 @@
-hello world from Uliana
+<!doctype html>
+<html> 
+<head>
+    <!--тут ничего не видит пользователь, параметры страницы для браузеров и поисковых систем,
+        её настройки-->
+    <title>Hello HTML</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- настройки от себя-->
+    <meta name="author" content="Vorobeva Uliana, student" />
+    <meta name="description" content="Practical work 1" />
+    <meta name="keywords" content="laba, web, ТюмГУ" />
+    <!--для подключения css:
+        <link rel="stylesheet" href="css/main.css">
+        и аналогично (лучше в конце до </body>):
+        <script src="js/main.js></script>"-->
+</head>
+<body>
+    <!--а тут всё видно на странице-->
+    <!--тут шапка-->
+    <!-- div span используются для css-->
+    <div id="header">
+        <img src="https://media.baamboozle.com/uploads/images/283746/1619857729_133679.png"
+             width="100" alt="логотип" /> <br />
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="main">
+        <h1>HTML</h1>
+        <p>
+            Some words using <b><abbr title="HyperText Markup Language">HTML</abbr> and "b"</b>.
+            Words with tag <strong>"strong"</strong>.
+            With <em>"em"</em> and with <i>"i"</i>.
+            With <strike> "strike"</strike>. <br />
+            Instead tag "p" for the paragraph we can use single tag "br" (break row)<br />
+            So we don't have indents at the top and bottom
+            <pre>Tag "pre" helps us
+                            save all paragraph indents and spaces..
+            Also you can use "code" for some code</pre>
+        </p>
+
+        <h3>Продолжим лабораторную..</h3>
+        <h4>Здесь мы балуемся с заголовками..</h4>
+        <p>
+            For formulas: H<sub>2</sub>O ("sub") and a<sup>2</sup> ("sup").
+        </p>
+        <h3>Ещё один тэг</h3>
+        <p>
+            let's make a horizontal line under the text using the tag "hr"<hr />
+        </p>
+    </div>
+    <div id="bottom">
+        <h3>Заголовок подвала</h3>
+        <p>Let's put here some words about bottom.</p><hr />
+        <ul type="square">
+            <li>Непронумерованный список контактов</li>
+            <li>777</li>
+            <li>smt@mail.ru</li>
+        </ul>
+        <p>Все права защищены</p>
+    </div>
+    <!--<ol start="1" type="I">
+
+        <li>Берёшь</li>
+        <li>Делаешь</li>
+    </ol>
+
+
+    <a href="https://google.com" target="_blank" title="клик!"> Ссылка на гугл</a><br />-->
+    <!-- ссылка на другой html из этой же папки будет: href="/about.html"
+        (без / если мы не на локальном сервере)
+        якорь: <a href="#bottom">fff</a> и внизу прописать <a name="bottom"></a> -->
+    <!--<a href="mailto:stud0000242414@utmn.study.ru">Написать</a><br />
+        как-то не оч работает-->
+    <!--<img src="https://w.forfun.com/fetch/89/890d733c8a938b859d86e8a22077aa72.jpeg" width="800"
+         alt="forest"/>
+    <p>хэй</p>
+    <img src="images/пианинко.png" alt="что-то красивое" width="800"/>-->
+    <!-- table row tr th table header-->
+    <!--<table border="1" width="500" >
+        <thread>
+            <tr>
+                <th> Name</th> <th>Fullname</th>
+            </tr>
+        </thread>
+        <tbody align="center">
+            <tr>
+                <th>Jo</th>
+                <th>Dale</th>
+                <tr><th>Jo2</th>
+                <th>Dale</th></tr>
+                <tr><th>Jo3</th>
+                <th>Dale</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Jo4</th>
+                <th>Last</th>
+            </tr>
+        </tfoot>
+    </table>-->
+</body>
+</html>
