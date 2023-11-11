@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\images",
+    "\\src\\assets",
+    "\\src\\assets\\styles"
   ],
+  "SelectedNode": "\\images\\mail_outline_24.svg",
   "PreviewInSolutionExplorer": false
 }
