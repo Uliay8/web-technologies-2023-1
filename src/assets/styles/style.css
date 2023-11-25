@@ -2,117 +2,129 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.mainParag {
-    font-family: Inter;
-    font-size: 16px;
-    line-height: 26px;
-    color: #1F3F68;
+:root{
+    --twel: calc(100vw/12);
+    --col: #2D66EE;
+    --gr: #101828;
 }
 
-.mainH1 {
-    font-family: Inter;
-    font-size: 64px;
-    color: #1F3F68;
+::-webkit-scrollbar{
+    width: 0;
 }
 
-.contactsH2 {
-    font-family: Inter;
-    font-weight: 500;
-    font-size: 44px;
-    text-align: center;
+body {
+    font-family: 'Inter', sans-serif;
 }
 
-.mainH3 {
-    font-family: Inter;
-    font-size: 36px;
-    text-align: center;
+header{
+    width: 100vw;
+    height: 56px;
+    border: 2px dotted red;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
 }
 
-.mainH4 {
-    font-family: Inter;
-    font-size: 20px;
-    line-height: 30px;
-    color: #1F3F68;
-}
-
-.text {
-    font-family: Inter;
-    border: 1px solid #356EAD;
-    box-sizing: border-box;
-    border-radius: 10px;
-    opacity: 0.6;
-}
-
-.button {
-    font-family: Inter;
-    background: linear-gradient(to right, #ff1737, #005794);
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
-
-.message {
-    font-family: Inter;
-    background: url("../../../images/pepsi2.jpg");
-}
-
-ul.breadcrumb {
-    margin-left: 50px;
-    display: inline-block;
-    list-style: none;
-}
-
-    ul.breadcrumb li {
-        
-        padding: 7px;
-        background-color: #2151a1;
-        border-radius: 50px;
-        /* -moz-border-radius: was for older versions of FireFox, and -webkit-border-radius: was for older versions of Chrome*/
-        margin-left: -50px;
-        float: right;
-        margin-top: 10px;
+    .header{
+        grid-column:2/-3;
+        background: #FFFFFF;
+        max-height: 52px;
+        padding: 16px 24px;
+        border-radius: 12px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
-        ul.breadcrumb li a {
-            text-decoration: none;
-            overflow: hidden;
-            font-size: 20px;
-            display: block;
-            border-radius: 50px;
-            height: 67px;
-            line-height: 67px;
-            color: #ffffff;
-            background-color: #4979c9;
-            width: 170px;
-            padding-left: 50px;
-            padding-right: 55px;
+    .header a {
+        text-decoration: none;
+    }
+
+        .header-element-logo{
+            /*width: var(--twel);*/
+            min-width: 85px;
+
         }
 
-            ul.breadcrumb li span.icon {
-                display: inline-block;
-                margin: 1px 0 0 -60px;
+            .header-logo {
+                font-size: calc(8px + 0.5vw);
+                min-font-size: 13px;
+                max-font-size: 20px;
             }
 
-            ul.breadcrumb li a .textBC {
-            margin: 0 0 0 10px;
-            font-family: Inter;
+            .header-logo a {
+                color: var(--col);
             }
 
-.breadcrumPH {
-    background: url("../../../images/pepsi2.jpg");
-    overflow: hidden;
-    
+        .header-element-menu{
+            width: 22.5vw;
+         }
+
+            .header-menu {
+                font-size: calc(4px + 0.5vw);
+                min-font-size: 9px;
+                max-font-size: 14px;
+            }
+
+            .header-menu a {
+                color: var(--gr);
+            }
+
+        .header-element-link{
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            width: 32.77vw;
+            min-width: 300px;
+            border: 2px dotted red;
+        }
+
+            .header-tel {
+                display: inline-flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: calc(4px + 0.5vw);
+                min-font-size: 8px;
+                max-font-size: 14px;
+                border: 2px dotted red;
+                width: 20vw;
+            }
+
+                .header-link-tel{
+                    padding: 0px 8px;
+                }
+
+                .header-image{
+                    padding-right: 8px;
+                    width: calc(13px + 0.5vw);
+                    min-width: 19px;
+                    max-width: 24px;
+                }
+
+                .header-link-email{
+
+                }
+            
+            .header-email {
+                display: inline-flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: calc(4px + 0.5vw);
+                min-font-size: 9px;
+                max-font-size: 14px;
+                border: 2px dotted red;
+            }
+
+            .header-link a {
+                color: var(--col);
+            }
+
+
+.activity {
+    background: #F2F4F7;
+    grid-template-rows: 1fr 11fr;
+    grid-row-gap: 20px;
 }
 
-.test {
-    color: yellow !important;
-}
 
-.test {
-    color: red !important;
-}
