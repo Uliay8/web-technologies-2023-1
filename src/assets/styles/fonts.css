@@ -27,8 +27,16 @@
     src: local('Inter'), local('Inter-Italic'), local('Inter Italic'),
         url("/static/fonts/Inter-Italic.otf") format('truetype')
 }
+
 @font-face {
     font-family: "Inter";
     src: local('Inter'), local('Inter-Thin'), local('Inter Thin'), 
         url("/static/fonts/Inter-Thin.otf") format('truetype')
 }
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: local('SF Pro Text'), local('sf-pro-text-regular'), local('SF-Pro-Text-Regular'),
+    url("/static/fonts/sf-pro-text-regular.otf") format('truetype')
+}
+
