@@ -13,8 +13,6 @@ body {
    margin: 0;
  }
 
-
-
   header {
     width: 100vw;
     height: 56px;
@@ -22,6 +20,16 @@ body {
     display: grid;
     padding-top: 24px;
     grid-template-columns: repeat(14, 1fr);
+    @media (max-width: 1023px){
+      height: 90px;
+      padding-top: 16px;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    @media (max-width: 424px) {
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: 12px 48px 16px 484px 60px;
+      height: 620px;
+    }
   }
   .header-open{
   //  mobile first..for 425px<
@@ -155,20 +163,45 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1023px) {
+      grid-column: 1/-1;
+      max-height: 90px;
+      padding: 25px 32px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    @media (max-width: 767px) {
+      padding: 16px;
+    }
+    @media (max-width: 424px) {
+      display: none;
+    }
     a {
       text-decoration: none;
     }
     &-element-three-bars{
       display: none;
+      @media (max-width: 1023px){
+        display: inline-flex;
+        grid-column: 1/2;
+        width: 59px;
+        height: 40px;
+      }
     }
     &-element-logo {
       width: 120px;
+      @media (max-width: 1023px){
+        margin-left: 50px;
+        grid-column: 6/10;
+      }
+      @media (max-width: 767px){
+        margin-left: -32px;
+      }
       &-t {
         font-size: 20px;
         font-weight: 700;
         line-height: 18px;
         letter-spacing: -0.154px;
-
         a {
           color: $col;
         }
@@ -179,6 +212,9 @@ body {
       display: flex;
       align-items: flex-start;
       gap: 24px;
+      @media (max-width: 1023px){
+        display: none;
+      }
       &-t {
         font-size: 14px;
         /*font-family: "SF Pro Text";*/
@@ -197,11 +233,17 @@ body {
       justify-content: flex-start;
       gap: 32px;
       font-size: 14px;
+      @media (max-width: 1023px){
+        grid-column-end: -1;
+      }
       &-tel {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         gap: 8px;
+        @media (max-width: 1439px){
+          display: none;
+        }
         &-s {
           /*font-family: SF Pro Text;*/
           font-size: 14px;
@@ -217,6 +259,9 @@ body {
         justify-content: flex-start;
         align-items: center;
         gap: 16px;
+        @media (max-width: 1023px){
+          gap: 8px;
+        }
         &-s {
         /*font-family: SF Pro Text;*/
         font-size: 14px;
@@ -244,12 +289,42 @@ body {
     height: 900px;
     display: grid;
     grid-template-columns: repeat(14, 1fr);
+    @media (max-width: 1439px){
+      height: 762px;
+      background-image: url("../../../images/background768.png");
+      grid-template-rows: 138px 204px 292px 32px;
+      gap: 32px;
+    }
+    @media (max-width: 1023px) {
+      grid-template-columns: repeat(18, 1fr);
+    }
+    @media (max-width: 767px) {
+      background-image: url("../../../images/background425.png");
+      background-position: 100% 90%;
+      height: 1145px;
+      grid-template-columns: repeat(8,1fr);
+      grid-template-rows: 80px 204px 414px 292px 32px;
+    }
     &-info {
       grid-column: 2/8;
       margin-top: 160px;
       display: inline-flex;
       flex-direction: column;
       align-items: flex-start;
+      @media (max-width: 1439px){
+        grid-column: 2/9;
+        grid-row: 2/3;
+        margin: 0px;
+      }
+      @media (max-width: 1023px){
+        grid-column: 2/11;
+      }
+      @media (max-width: 767px){
+        grid-column: 1/-1;
+        width: 100vw;
+        grid-row: 2/3;
+        padding: 0px 10px 0px 24px;
+      }
       &-title {
         color: $gray;
         font-size: 36px;
@@ -257,6 +332,9 @@ body {
         font-weight: 700;
         line-height: 144%;
         letter-spacing: 0.326px;
+        @media (max-width: 1023px){
+          font-size: 28px;
+        }
       }
       &-sub {
          color: $gray;
@@ -280,6 +358,31 @@ body {
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
+      @media (max-width: 1439px){
+        grid-column: 2/10;
+        max-width: 586px;
+        grid-row: 3/4;
+        margin: 0px;
+        padding: 32px;
+        gap: 32px;
+      }
+      @media (max-width: 1023px){
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        grid-column: 2/11;
+        max-width: 440px;
+        gap: 16px;
+      }
+      @media (max-width: 767px){
+        grid-column: 1/8;
+        width: 90vw;
+        grid-row: 4/5;
+        padding: 32px 32px 32px 32px;
+        margin-left: 24px;
+        margin-right: 8px;
+      }
       span {
         color: $gray;
         font-size: 20px;
@@ -287,32 +390,58 @@ body {
         font-weight: 700;
         line-height: 24px;
         letter-spacing: 0.38px;
+        @media (max-width: 1023px){
+          margin-top: -16px;
+          font-size: 16px;
+        }
       }
       &-form {
         display: flex;
         align-items: center;
         gap: 24px;
-        &-sub label {
-          color: #667085;
-          /*font-family: SF Pro Text;*/
-          font-size: 13px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 16px;
-          letter-spacing: -0.078px;
+        @media (max-width: 1439px){
+          display: grid;
+          grid-template-columns: repeat(10, 1fr);
         }
-        &-sub input {
-          color: $gray;
-          /*font-family: SF Pro Text;*/
-          font-size: 17px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 22px;
-          letter-spacing: -0.408px;
+        &-sub{
+          @media (max-width: 1439px){
+            grid-column: 1/8;
+            display: flex;
+            justify-content: space-between;
+          }
+          @media (max-width: 1023px){
+            grid-column: 1/11;
+            display: flex;
+            flex-direction: column;
+          }
+          label {
+            color: #667085;
+            /*font-family: SF Pro Text;*/
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: -0.078px;
+          }
+          input {
+             color: $gray;
+             /*font-family: SF Pro Text;*/
+             font-size: 17px;
+             font-style: normal;
+             font-weight: 400;
+             line-height: 22px;
+             letter-spacing: -0.408px;
+           }
         }
         &-button {
           display: flex;
           align-items: flex-start;
+          @media (max-width: 1439px){
+            grid-column: -1/-4;
+          }
+          @media (max-width: 1023px){
+            grid-column: 1/6;
+          }
           button {
             color: #FFF;
             /*font-family: SF Pro Text;*/
@@ -334,7 +463,6 @@ body {
         }
       }
     }
-
   }
 
   .development-cycle {
@@ -351,7 +479,7 @@ body {
       height: 848px;
     }
     &-title {
-      grid-column: 1/8;
+      grid-column: 2/8;
       gap: 24px;
       display: inline-flex;
       flex-direction: column;
@@ -385,7 +513,7 @@ body {
       }
     }
     &-technologies {
-      grid-column: 2/7;
+      grid-column: 2/8;
       display: inline-flex;
       flex-direction: column;
       align-items: flex-start;
@@ -592,161 +720,3 @@ body {
       }
     }
   }
-
-@media (max-width: 1439px) {
-  .header{
-    &-element-link{
-      &-tel{
-        display: none;
-      }
-    }
-  }
-  .activity{
-    height: 762px;
-    background-image: url("../../../images/background768.png");
-    grid-template-rows: 138px 204px 292px 32px;
-    gap: 32px;
-    &-info{
-      grid-column: 2/9;
-      grid-row: 2/3;
-      margin: 0px;
-    }
-    &-leave-contacts{
-      grid-column: 2/10;
-      max-width: 586px;
-      grid-row: 3/4;
-      margin: 0px;
-      padding: 32px;
-      gap: 32px;
-      &-form{
-        flex-wrap: wrap;
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        &-sub{
-          grid-column: 1/8;
-          display: flex;
-          justify-content: space-between;
-          label{
-
-          }
-          input{
-
-          }
-        }
-        &-button {
-          grid-column: -1/-4;
-          button{
-
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 1023px) {
-  header{
-    height: 90px;
-    padding-top: 16px;
-    grid-template-columns: repeat(12, 1fr);
-  }
-  .header{
-    grid-column: 1/-1;
-    max-height: 90px;
-    padding: 25px 32px;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    &-element-menu{
-      display: none;
-    }
-    &-element-three-bars{
-      display: inline-flex;
-      grid-column: 1/2;
-      width: 59px;
-      height: 40px;
-    }
-    &-element-logo{
-      margin-left: 50px;
-      grid-column: 6/10;
-    }
-    &-element-link{
-      grid-column-end: -1;
-      &-email{
-        gap: 8px;
-      }
-    }
-  }
-  .activity{
-    grid-template-columns: repeat(18, 1fr);
-    &-info{
-      grid-column: 2/11;
-      &-title{
-        font-size: 28px;
-      }
-      &-sub{
-
-      }
-    }
-    &-leave-contacts{
-      display: inline-flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-start;
-      grid-column: 2/11;
-      max-width: 440px;
-      gap: 16px;
-      span{
-        margin-top: -16px;
-        font-size: 16px;
-      }
-      &-form{
-        &-sub{
-          grid-column: 1/11;
-          display: flex;
-          flex-direction: column;
-        }
-        &-button{
-          grid-column: 1/6;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 767px) {
-  .header{
-    padding: 16px;
-    &-element-logo{
-      margin-left: -32px;
-    }
-  }
-  .activity{
-    background-image: url("../../../images/background425.png");
-    background-position: 100% 90%;
-    height: 1145px;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: 80px 204px 414px 292px 32px;
-    &-info{
-      grid-column: 1/-1;
-      width: 100vw;
-      grid-row: 2/3;
-      padding: 0px 10px 0px 24px;
-    }
-    &-leave-contacts{
-      grid-column: 1/8;
-      width: 90vw;
-      grid-row: 4/5;
-      padding: 32px 32px 32px 32px;
-      margin-left: 24px;
-      margin-right: 8px;
-    }
-  }
-}
-@media (max-width: 424px) {
-  header {
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 12px 48px 16px 484px 60px;
-    height: 620px;
-  }
-  .header{
-    display: none;
-  }
-}
