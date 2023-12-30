@@ -232,8 +232,8 @@
                 <span>Business analysis / iOS / Android / QA / UI/UX Design</span>
             </div>
             <div class="proud-of-element-about-2">
-                <span><img src="images/place_outline_24.svg">Kazakhstan</span>
-                <span><img src="images/work_outline_24.svg" />Medicine</span>
+                <div><span><img src="images/place_outline_24.svg"></span><span>Kazakhstan</span></div>
+                <div><span><img src="images/work_outline_24.svg" /></span><span>Medicine</span></div>
             </div>
             <div class="proud-of-element-about-3">
                 <div class="proud-of-element-about-3-1">
@@ -242,7 +242,7 @@
                 </div>
                 <div class="proud-of-element-about-3-2">
                     <span>User Growth</span>
-                    <span>Active Users</span>
+                    <span style="padding-left: 8px">Active Users</span>
                 </div>
             </div>
             <div class="proud-of-element-about-4">
@@ -254,33 +254,80 @@
             <img src="images/i-teka.svg" />
         </div>
     </div>
-    <hr />
-    <div class="discuss-project">
+
+    <div class="discuss-project discuss-project-noise">
+        <div class="discuss-project-vector"></div>
         <div class="discuss-project-text">
-            <h2>Let's discuss Your project</h2>
-            <span>Let's figure out how to create an effective application, its cost and terms of its development</span>
+            <span class="discuss-project-text-t">Let's discuss Your project</span>
+            <span class="discuss-project-text-sup">Let's figure out how to create an effective application, its cost and terms of its development</span>
         </div>
         <div class="discuss-project-form">
             <form>
-                <label>Best phone number:</label>
-                <input type="number" name="BestPhoneNumber">
-                <label>Full name:</label>
-                <input type="text" name="FullName">
-                <input type="submit" value="Discuss the project">
+                <div class="discuss-project-form-fields">
+                    <div class="discuss-project-form-fields-field">
+                        <label>Best phone number:</label>
+                        <input type="number" name="BestPhoneNumber">
+                    </div>
+                    <div class="discuss-project-form-fields-field">
+                        <label>Full name:</label>
+                        <input type="text" name="FullName">
+                    </div>
+                </div>
+                <div class="discuss-project-form-button">
+                    <input type="submit" value="Discuss the project">
+                </div>
             </form>
         </div>
     </div>
-    <hr />
+
     <div class="stages">
-        <h2>Application Development Stages</h2>
-        <ul>
-            <li><a href=""><img src="images/planing.svg" /><h3>Analysis</h3><span>We write technical specifications for development, taking into account the business processes and technologies of the customer and the needs of users.</span></a></li>
-            <li><a href=""><img src="images/graphic-design.svg" /><h3>Design</h3><span>We adapt the customer's corporate identity to the platform guidelines. We draw convenient and understandable interfaces.</span></a></li>
-            <li><a href=""><img src="images/coding-language.svg" /><h3>Development</h3><span>We create an extensible architecture, write clean and stable code. We integrate with customer technologies.</span></a></li>
-            <li><a href=""><img src="images/security.svg" /><h3>Testing</h3><span>We carry out functional testing and do bug fixes. We adapt the application to different phone resolutions.</span></a></li>
-            <li><a href=""><img src="images/hosting 1.svg" /><h3>Launching</h3><span>We design the application page and publish it in the App Store and Google Play stores.</span></a></li>
-            <li><a href=""><img src="images/application.svg" /><h3>Support</h3><span>We monitor the stability of the application, update it for new devices and versions of iOS and Android.</span></a></li>
-        </ul>
+        <div class="stages-title">Application Development Stages</div>
+        <div class="stages-list">
+            <ul>
+                <li>
+                    <div class="stages-list-inf">
+                        <span class="stages-list-inf-option"><img src="images/planing.svg" />Analysis</span>
+                        <span class="stages-list-inf-description">We write technical specifications for development, taking into account the business processes and technologies of the customer and the needs of users.</span>
+                    </div>
+                    <div class="stages-list-img"><img src="images/1.svg"/></div>
+                </li>
+                <li>
+                    <div class="stages-list-inf">
+                        <span class="stages-list-inf-option"><img src="images/graphic-design.svg" />Design</span>
+                        <span class="stages-list-inf-description">We adapt the customer's corporate identity to the platform guidelines. We draw convenient and understandable interfaces.</span>
+                    </div>
+                    <div class="stages-list-img"><img src="images/2.svg"/></div>
+                </li>
+                <li>
+                    <div class="stages-list-inf">
+                        <span class="stages-list-inf-option"><img src="images/coding-language.svg" />Development</span>
+                        <span class="stages-list-inf-description">We create an extensible architecture, write clean and stable code. We integrate with customer technologies.</span>
+                    </div>
+                    <div class="stages-list-img"><img src="images/3.svg"/></div>
+                </li>
+                <li>
+                    <div class="stages-list-inf">
+                        <span class="stages-list-inf-option"><img src="images/security.svg" />Testing</span>
+                        <span class="stages-list-inf-description">We carry out functional testing and do bug fixes. We adapt the application to different phone resolutions.</span>
+                    </div>
+                    <div class="stages-list-img"><img src="images/4.svg"/></div>
+                </li>
+                <li>
+                    <div class="stages-list-inf">
+                        <span class="stages-list-inf-option"><img src="images/hosting 1.svg" />Launching</span>
+                        <span class="stages-list-inf-description">We design the application page and publish it in the App Store and Google Play stores.</span>
+                    </div>
+                    <div class="stages-list-img"><img src="images/5.svg"/></div>
+                </li>
+                <li>
+                    <div class="stages-list-inf">
+                        <span class="stages-list-inf-option"><img src="images/application.svg" />Support</span>
+                        <span class="stages-list-inf-description">We monitor the stability of the application, update it for new devices and versions of iOS and Android.</span>
+                    </div>
+                    <div class="stages-list-img"><img src="images/6.svg"/></div>
+                </li>
+            </ul>
+        </div>
     </div>
     <hr />
     <div class="our-team">
