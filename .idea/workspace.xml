@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="478d2228-baeb-4373-8342-aa91ebf1ba64" name="Changes" comment="Laba4 done">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/web-technologies-2022-2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/global.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/utils.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/Inter-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/Inter-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/Inter-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/Inter-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/Inter-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/Inter-Regular.woff2" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="les4" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="e5a2653d-646f-4880-829e-f557eaf7682a" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2Yf8lRCMrQZ6pMtKa07aCcdki6z" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/СетьТехники/Desktop/PIS_WinForm/web-technologies-2023-1/src/assets/scss",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "settings.editor.splitter.proportion": "0.30020705",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\СетьТехники\Desktop\PIS_WinForm\web-technologies-2023-1\src\assets\scss" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\СетьТехники\Desktop\PIS_WinForm\web-technologies-2023-1\src\assets" />
+      <recent name="C:\Users\СетьТехники\Desktop\PIS_WinForm\web-technologies-2023-1\src\assets\css" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="478d2228-baeb-4373-8342-aa91ebf1ba64" name="Changes" comment="" />
+      <created>1700905424144</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700905424144</updated>
+      <workItem from="1700905425237" duration="607000" />
+      <workItem from="1700906071118" duration="566000" />
+      <workItem from="1700906675241" duration="694000" />
+      <workItem from="1700907387378" duration="55000" />
+      <workItem from="1700907710366" duration="14521000" />
+      <workItem from="1700925128681" duration="9661000" />
+      <workItem from="1701421205507" duration="8427000" />
+      <workItem from="1701494973387" duration="15371000" />
+      <workItem from="1701874558747" duration="276000" />
+      <workItem from="1702549708638" duration="731000" />
+      <workItem from="1702552930052" duration="18797000" />
+      <workItem from="1702655291761" duration="10100000" />
+      <workItem from="1702709871015" duration="26344000" />
+      <workItem from="1703142159234" duration="23083000" />
+      <workItem from="1703297786874" duration="5750000" />
+      <workItem from="1703303636180" duration="15732000" />
+      <workItem from="1703323378031" duration="4087000" />
+      <workItem from="1703334183373" duration="2271000" />
+      <workItem from="1703400232626" duration="2507000" />
+      <workItem from="1703593011194" duration="18496000" />
+      <workItem from="1703949959038" duration="10999000" />
+      <workItem from="1704123095351" duration="4893000" />
+      <workItem from="1704200296596" duration="2005000" />
+      <workItem from="1704213169888" duration="9836000" />
+      <workItem from="1704281191144" duration="9198000" />
+      <workItem from="1704294732913" duration="8496000" />
+      <workItem from="1704356683995" duration="24884000" />
+      <workItem from="1704454857098" duration="27177000" />
+      <workItem from="1704827360137" duration="9743000" />
+      <workItem from="1704896843612" duration="13053000" />
+    </task>
+    <task id="LOCAL-00001" summary="check connection between phpstorm and git">
+      <created>1700906925611</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700906925611</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="lesson5" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="check connection between phpstorm and git" />
+    <MESSAGE value="Laba4 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laba4 done" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

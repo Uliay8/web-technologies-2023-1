@@ -1,0 +1,33 @@
+
+.list-item {
+    font-size: 16px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.list-items {
+    padding-left: 1.5em;
+    display: none;
+}
+
+.title-img-arrow {
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+}
+
+.title-img-folder {
+    width: 2em;
+}
+
+.list-item_open > .list-items {
+    display: block;
+}
+
+.list-item_open > .title .title-img-arrow {
+    transform: rotate(180deg);
+}
