@@ -9,9 +9,9 @@ $xs: 424px;
 $s: 767px;
 $m: 1023px;
 $l: 1439px;
-$animStart: 68vw;
-$animShortSwitch: -5vw;
-$animLongSwitch: -38vw;
+$animStart: 50vh;
+$animShortSwitch: -5vh;
+$animLongSwitch: -63vh;
 
 @mixin field {
   display: flex;
@@ -55,127 +55,6 @@ body {
     position: fixed;
     display: grid;
     grid-template-columns: repeat(14, 1fr);
-  }
-  .header-op {
-  //  mobile first..for 425px<
-    @media (min-width: 424.1px) {
-      display: none;
-    }
-    @media (max-width: $xs) {
-      background: #FFFFFF;
-      height: 620px;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      grid-column: 1/-1;
-    }
-    &-element-cr {
-      @media (max-width: $xs) {
-        display: flex;
-        flex-direction: row-reverse;
-        grid-row: 2/3;
-        grid-column: -2/-1;
-        padding: 12px;
-      }
-    }
-    &-element-center{
-      @media (max-width: $xs) {
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-        align-items: center;
-        grid-row: 4/5;
-        grid-column: 3/7;
-        gap: 64px;
-        a{
-          text-decoration: none;
-        }
-      }
-      &-logo{
-        @media (max-width: $xs) {
-          width: 120px;
-          &-t {
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 18px;
-            letter-spacing: -0.154px;
-            a {
-              color: $colourMain;
-            }
-          }
-        }
-      }
-      &-menu{
-        @media (max-width: $xs) {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: space-between;
-          gap: 24px;
-          &-t {
-            font-size: 24px;
-            
-            font-weight: 400;
-            line-height: 144%;
-            letter-spacing: 0.326px;
-            a {
-              color: $gray;
-            }
-          }
-        }
-      }
-      &-link{
-        @media (max-width: $xs) {
-          display: flex;
-          flex-direction: column;
-          gap: 16px;
-          font-size: 14px;
-          margin-top: -24px;
-          &-tel {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 8px;
-            &-t{
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              gap:8px;
-            }
-            &-this {
-              font-size: 14px;
-              
-              font-weight: 500;
-              line-height: 18px;
-              letter-spacing: -0.154px;
-            }
-          }
-          &-email {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 8px;
-            &-t{
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              gap: 8px;
-            }
-            &-this {
-              /*font-family: SF Pro Text;*/
-              font-size: 14px;
-              
-              font-weight: 500;
-              line-height: 18px;
-              letter-spacing: -0.154px;
-            }
-          }
-          &-image {
-            width: 24px;
-          }
-        }
-      }
-    }
   }
   .header-close {
     grid-column: 2/-3;
@@ -281,17 +160,6 @@ body {
       background-position-x: calc(100% - 19.5vw - 32px);
       background-position-y: $animStart;
       animation: up 6s linear infinite;
-      @media (max-width: $l){
-        background-size: 16.5vw auto;
-        background-position-x: calc(100% - 16.5vw - 24px);
-      }
-      @media (max-width: $m){
-        background-position-x: calc(100% - 16.5vw - 20px);
-      }
-      @media (max-width: $s){
-        background-size: 32.5vw auto;
-        background-position-x: calc(100% - 32.5vw - 16px);
-      }
     }
     &-right::after {
       content: '';
@@ -310,14 +178,6 @@ body {
       animation-timing-function: linear;
       animation-iteration-count: infinite;
       animation-direction: reverse;
-      @media (max-width: $l){
-        background-size: 16.5vw auto;
-        background-position-x: calc(100%);
-      }
-      @media (max-width: $s){
-        background-size: 32.5vw auto;
-        background-position-x: calc(100%);
-      }
     }
     overflow: hidden;
     position: relative;
@@ -1229,7 +1089,14 @@ body {
     }
   }
   .activity {
-    //листание
+    &-left::before {
+      background-size: 16.5vw auto;
+      background-position-x: calc(100% - 16.5vw - 20px);
+    }
+    &-right::after {
+      background-size: 16.5vw auto;
+      background-position-x: calc(100%);
+    }
     height: 762px;
     grid-template-columns: repeat(18, 1fr);
     grid-template-rows: 138px 204px 322px 32px;
@@ -1590,7 +1457,82 @@ body {
       }
     }
   }
+  .header-open {
+    height: 642px;
+    margin-top: -16px;
+    grid-column: 1/-1;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 22px 60px 16px 18px 52px 258px 52px 104px 60px;
+    &-element-cross {
+      margin: 0px 32px 0px 0px;
+      display: flex;
+      flex-direction: row-reverse;
+      grid-row: 2/3;
+      grid-column: -2/-1;
+      padding: 12px;
+    }
+    &-element-logo {
+      grid-column: 4/6;
+      grid-row: 4/5;
+      min-width: 120px;
+      margin-left: 16px;
+      @include font($colourMain, 20px, 700, 18px, -0.154px, Inter);
+    }
+    &-element-menu {
+      grid-row: 6/7;
+      grid-column: 4/6;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      &-item {font-size: 24px;}
+    }
+    &-element-link {
+      grid-column: 3/-3;
+      grid-row: 8/9;
+      max-width: 174px;
+      margin-left: 20px;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      &-tel {
+        width: 42vw;
+        margin-left: -10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        &-number {
+          font-size: 14px;
+          padding: 0px 0px 0px 19px;
+        }
+      }
+      &-email {
+        width: 42vw;
+        &-address {
+          font-size: 14px;
+          padding: 0px 8px 0px 0px;
+        }
+      }
+      &-image {
+        width: 24px;
+        padding-left: 8px;
+        &-second {
+          width: 24px;
+          padding-left: 8px;
+        }
+      }
+    }
+  }
   .activity {
+    &-left::before {
+      background-size: 32.5vw auto;
+      background-position-x: calc(100% - 32.5vw - 16px);
+    }
+    &-right::after {
+      background-size: 32.5vw auto;
+      background-position-x: calc(100%);
+    }
     background-position: 100% 90%;
     height: 1192px;
     grid-template-columns: repeat(8, 1fr);
@@ -1908,7 +1850,6 @@ body {
 }
 
   //add vectors,
-// button 3bars ,
 // flag
 // preprocesser edit
 // ul li faq ques !!! accordion?

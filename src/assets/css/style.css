@@ -47,126 +47,7 @@ header {
   display: grid;
   grid-template-columns: repeat(14, 1fr); }
 
-@media (min-width: 424.1px) {
-  /* line 59, style.scss */
-  .header-op {
-    display: none; } }
-
-@media (max-width: 424px) {
-  /* line 59, style.scss */
-  .header-op {
-    background: #FFFFFF;
-    height: 620px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    grid-column: 1/-1; } }
-
-@media (max-width: 424px) {
-  /* line 70, style.scss */
-  .header-op-element-cr {
-    display: flex;
-    flex-direction: row-reverse;
-    grid-row: 2/3;
-    grid-column: -2/-1;
-    padding: 12px; } }
-
-@media (max-width: 424px) {
-  /* line 79, style.scss */
-  .header-op-element-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: center;
-    grid-row: 4/5;
-    grid-column: 3/7;
-    gap: 64px; }
-    /* line 88, style.scss */
-    .header-op-element-center a {
-      text-decoration: none; } }
-
-@media (max-width: 424px) {
-  /* line 92, style.scss */
-  .header-op-element-center-logo {
-    width: 120px; }
-    /* line 95, style.scss */
-    .header-op-element-center-logo-t {
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 18px;
-      letter-spacing: -0.154px; }
-      /* line 100, style.scss */
-      .header-op-element-center-logo-t a {
-        color: #2D66EE; } }
-
-@media (max-width: 424px) {
-  /* line 106, style.scss */
-  .header-op-element-center-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px; }
-    /* line 113, style.scss */
-    .header-op-element-center-menu-t {
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 144%;
-      letter-spacing: 0.326px; }
-      /* line 119, style.scss */
-      .header-op-element-center-menu-t a {
-        color: #101828; } }
-
-@media (max-width: 424px) {
-  /* line 125, style.scss */
-  .header-op-element-center-link {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    font-size: 14px;
-    margin-top: -24px; }
-    /* line 132, style.scss */
-    .header-op-element-center-link-tel {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 8px; }
-      /* line 139, style.scss */
-      .header-op-element-center-link-tel-t {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 8px; }
-      /* line 145, style.scss */
-      .header-op-element-center-link-tel-this {
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 18px;
-        letter-spacing: -0.154px; }
-    /* line 153, style.scss */
-    .header-op-element-center-link-email {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 8px; }
-      /* line 158, style.scss */
-      .header-op-element-center-link-email-t {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 8px; }
-      /* line 164, style.scss */
-      .header-op-element-center-link-email-this {
-        /*font-family: SF Pro Text;*/
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 18px;
-        letter-spacing: -0.154px; }
-    /* line 173, style.scss */
-    .header-op-element-center-link-image {
-      width: 24px; } }
-
-/* line 180, style.scss */
+/* line 59, style.scss */
 .header-close {
   grid-column: 2/-3;
   max-height: 52px;
@@ -177,19 +58,19 @@ header {
   display: inline-flex;
   align-items: center;
   justify-content: space-between; }
-  /* line 190, style.scss */
+  /* line 69, style.scss */
   .header-close a {
     text-decoration: none; }
-  /* line 191, style.scss */
+  /* line 70, style.scss */
   .header-close-element-three-bars {
     display: none; }
-  /* line 194, style.scss */
+  /* line 73, style.scss */
   .header-close-element-cross {
     display: none; }
-  /* line 197, style.scss */
+  /* line 76, style.scss */
   .header-close-element-logo {
     width: 120px; }
-    /* line 199, style.scss */
+    /* line 78, style.scss */
     .header-close-element-logo-title {
       color: #2D66EE;
       font-size: 20px;
@@ -197,16 +78,16 @@ header {
       line-height: 18px;
       letter-spacing: -0.154px;
       font-family: Inter; }
-      /* line 201, style.scss */
+      /* line 80, style.scss */
       .header-close-element-logo-title a {
         color: #2D66EE; }
-  /* line 204, style.scss */
+  /* line 83, style.scss */
   .header-close-element-menu {
     width: 324px;
     display: flex;
     align-items: flex-start;
     gap: 24px; }
-    /* line 209, style.scss */
+    /* line 88, style.scss */
     .header-close-element-menu-item {
       color: #101828;
       font-size: 14px;
@@ -214,21 +95,21 @@ header {
       line-height: 18px;
       letter-spacing: -0.154px;
       font-family: SF Pro Text; }
-      /* line 211, style.scss */
+      /* line 90, style.scss */
       .header-close-element-menu-item a {
         color: #101828; }
-  /* line 214, style.scss */
+  /* line 93, style.scss */
   .header-close-element-link {
     display: flex;
     justify-content: flex-start;
     gap: 32px; }
-    /* line 218, style.scss */
+    /* line 97, style.scss */
     .header-close-element-link-tel {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       gap: 8px; }
-      /* line 223, style.scss */
+      /* line 102, style.scss */
       .header-close-element-link-tel-number {
         color: #2D66EE;
         font-size: 14px;
@@ -237,13 +118,13 @@ header {
         letter-spacing: -0.154px;
         font-family: SF Pro Text;
         padding-right: 16px; }
-    /* line 228, style.scss */
+    /* line 107, style.scss */
     .header-close-element-link-email {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       gap: 16px; }
-      /* line 233, style.scss */
+      /* line 112, style.scss */
       .header-close-element-link-email-address {
         color: #2D66EE;
         font-size: 14px;
@@ -251,32 +132,32 @@ header {
         line-height: 18px;
         letter-spacing: -0.154px;
         font-family: SF Pro Text; }
-    /* line 237, style.scss */
+    /* line 116, style.scss */
     .header-close-element-link-image {
       width: 24px; }
-      /* line 239, style.scss */
+      /* line 118, style.scss */
       .header-close-element-link-image-second {
         display: none; }
 
 @keyframes up {
   0% {
-    background-position-y: 68vw; }
+    background-position-y: 50vh; }
   4% {
-    background-position-y: 49vw; }
+    background-position-y: 18.5vh; }
   29% {
-    background-position-y: 44vw; }
+    background-position-y: 13.5vh; }
   37% {
-    background-position-y: 6vw; }
+    background-position-y: -49.5vh; }
   62% {
-    background-position-y: 1vw; }
+    background-position-y: -54.5vh; }
   70% {
-    background-position-y: -37vw; }
+    background-position-y: -117.5vh; }
   95% {
-    background-position-y: -42vw; }
+    background-position-y: -122.5vh; }
   100% {
-    background-position-y: -61vw; } }
+    background-position-y: -154vh; } }
 
-/* line 269, style.scss */
+/* line 148, style.scss */
 .activity {
   overflow: hidden;
   position: relative;
@@ -285,7 +166,7 @@ header {
   background-color: #F2F4F7;
   display: grid;
   grid-template-columns: repeat(14, 1fr); }
-  /* line 270, style.scss */
+  /* line 149, style.scss */
   .activity-left::before {
     z-index: 0;
     content: '';
@@ -298,23 +179,9 @@ header {
     background-size: 19.5vw auto;
     background-repeat: repeat-y;
     background-position-x: calc(100% - 19.5vw - 32px);
-    background-position-y: 68vw;
+    background-position-y: 50vh;
     animation: up 6s linear infinite; }
-    @media (max-width: 1439px) {
-      /* line 270, style.scss */
-      .activity-left::before {
-        background-size: 16.5vw auto;
-        background-position-x: calc(100% - 16.5vw - 24px); } }
-    @media (max-width: 1023px) {
-      /* line 270, style.scss */
-      .activity-left::before {
-        background-position-x: calc(100% - 16.5vw - 20px); } }
-    @media (max-width: 767px) {
-      /* line 270, style.scss */
-      .activity-left::before {
-        background-size: 32.5vw auto;
-        background-position-x: calc(100% - 32.5vw - 16px); } }
-  /* line 296, style.scss */
+  /* line 164, style.scss */
   .activity-right::after {
     content: '';
     display: flex;
@@ -326,23 +193,13 @@ header {
     background-size: 19.5vw auto;
     background-repeat: repeat-y;
     background-position-x: calc(100%);
-    background-position-y: 68vw;
+    background-position-y: 50vh;
     animation-name: up;
     animation-duration: 6s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: reverse; }
-    @media (max-width: 1439px) {
-      /* line 296, style.scss */
-      .activity-right::after {
-        background-size: 16.5vw auto;
-        background-position-x: calc(100%); } }
-    @media (max-width: 767px) {
-      /* line 296, style.scss */
-      .activity-right::after {
-        background-size: 32.5vw auto;
-        background-position-x: calc(100%); } }
-  /* line 329, style.scss */
+  /* line 189, style.scss */
   .activity-info {
     z-index: 1;
     grid-column: 2/8;
@@ -350,7 +207,7 @@ header {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start; }
-    /* line 336, style.scss */
+    /* line 196, style.scss */
     .activity-info-title {
       color: #101828;
       font-size: 36px;
@@ -358,7 +215,7 @@ header {
       line-height: 144%;
       letter-spacing: 0.326px;
       font-family: Inter; }
-    /* line 339, style.scss */
+    /* line 199, style.scss */
     .activity-info-sub {
       color: #101828;
       font-size: 15px;
@@ -366,10 +223,10 @@ header {
       line-height: 20px;
       letter-spacing: -0.24px;
       font-family: SF Pro Text; }
-  /* line 343, style.scss */
+  /* line 203, style.scss */
   .activity-leave-contacts-back {
     display: none; }
-  /* line 346, style.scss */
+  /* line 206, style.scss */
   .activity-leave-contacts {
     z-index: 3;
     grid-column: 2/9;
@@ -384,7 +241,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start; }
-    /* line 360, style.scss */
+    /* line 220, style.scss */
     .activity-leave-contacts span {
       width: 80%;
       margin-top: 8px;
@@ -394,13 +251,13 @@ header {
       line-height: 24px;
       letter-spacing: 0.38px;
       font-family: Inter; }
-    /* line 365, style.scss */
+    /* line 225, style.scss */
     .activity-leave-contacts-form {
       margin-bottom: 16px;
       display: flex;
       align-items: center;
       gap: 24px; }
-      /* line 371, style.scss */
+      /* line 231, style.scss */
       .activity-leave-contacts-form-field label {
         color: #667085;
         font-size: 13px;
@@ -409,7 +266,7 @@ header {
         letter-spacing: -0.078px;
         font-family: SF Pro Text;
         padding-bottom: 8px; }
-      /* line 374, style.scss */
+      /* line 234, style.scss */
       .activity-leave-contacts-form-field input {
         color: #101828;
         font-size: 17px;
@@ -418,11 +275,11 @@ header {
         letter-spacing: -0.408px;
         font-family: SF Pro Text;
         padding-bottom: 8px; }
-      /* line 378, style.scss */
+      /* line 238, style.scss */
       .activity-leave-contacts-form-button {
         display: flex;
         align-items: flex-start; }
-        /* line 381, style.scss */
+        /* line 241, style.scss */
         .activity-leave-contacts-form-button button {
           width: 140px;
           height: 58px;
@@ -440,13 +297,13 @@ header {
           word-break: break-word;
           text-align: left; }
 
-/* line 397, style.scss */
+/* line 257, style.scss */
 .development-cycle {
   background-color: #ffffff;
   height: 500px;
   display: grid;
   grid-template-columns: repeat(14, 1fr); }
-  /* line 402, style.scss */
+  /* line 262, style.scss */
   .development-cycle-head {
     grid-column: 2/8;
     gap: 24px;
@@ -454,7 +311,7 @@ header {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start; }
-    /* line 409, style.scss */
+    /* line 269, style.scss */
     .development-cycle-head-title {
       color: #101828;
       font-size: 36px;
@@ -462,7 +319,7 @@ header {
       line-height: 144%;
       letter-spacing: 0.326px;
       font-family: Inter; }
-    /* line 412, style.scss */
+    /* line 272, style.scss */
     .development-cycle-head-sub {
       color: #101828;
       font-size: 15px;
@@ -470,20 +327,20 @@ header {
       line-height: 20px;
       letter-spacing: -0.24px;
       font-family: SF Pro Text; }
-  /* line 416, style.scss */
+  /* line 276, style.scss */
   .development-cycle-technologies {
     grid-column: 2/8;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px; }
-    /* line 422, style.scss */
+    /* line 282, style.scss */
     .development-cycle-technologies p {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 12px; }
-    /* line 428, style.scss */
+    /* line 288, style.scss */
     .development-cycle-technologies-title {
       color: #101828;
       font-size: 20px;
@@ -491,7 +348,7 @@ header {
       line-height: 24px;
       letter-spacing: 0.38px;
       font-family: SF Pro Display; }
-    /* line 431, style.scss */
+    /* line 291, style.scss */
     .development-cycle-technologies-sub {
       color: #344054;
       font-size: 17px;
@@ -500,20 +357,20 @@ header {
       letter-spacing: -0.408px;
       font-family: SF Pro Text;
       padding-right: 120px; }
-  /* line 436, style.scss */
+  /* line 296, style.scss */
   .development-cycle-list {
     grid-column: -7/-4;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 70px; }
-    /* line 442, style.scss */
+    /* line 302, style.scss */
     .development-cycle-list ul li {
       display: flex;
       padding: 12px 0px;
       align-items: center;
       gap: 12px; }
-      /* line 447, style.scss */
+      /* line 307, style.scss */
       .development-cycle-list ul li a {
         text-decoration: none;
         color: #1D2939;
@@ -523,7 +380,7 @@ header {
         letter-spacing: 0.38px;
         font-family: SF Pro Display; }
 
-/* line 454, style.scss */
+/* line 314, style.scss */
 .industries {
   background: #F2F4F7;
   height: 552px;
@@ -532,7 +389,7 @@ header {
   align-items: stretch;
   gap: 24px;
   grid-template-columns: repeat(14, 1fr); }
-  /* line 462, style.scss */
+  /* line 322, style.scss */
   .industries-logo {
     grid-column: 2/7;
     display: inline-flex;
@@ -543,24 +400,24 @@ header {
     line-height: 144%;
     letter-spacing: 0.326px;
     font-family: Inter; }
-  /* line 468, style.scss */
+  /* line 328, style.scss */
   .industries-list {
     grid-column: 2/-2;
     height: 280px; }
-    /* line 471, style.scss */
+    /* line 331, style.scss */
     .industries-list ul {
       display: inline-flex;
       flex-direction: row;
       align-items: flex-start;
       flex-wrap: wrap; }
-      /* line 476, style.scss */
+      /* line 336, style.scss */
       .industries-list ul li {
         display: flex;
         padding: 8px 0px;
         align-items: center;
         width: 26.5vw;
         gap: 12px; }
-        /* line 482, style.scss */
+        /* line 342, style.scss */
         .industries-list ul li a {
           text-decoration: none;
           color: #101828;
@@ -569,7 +426,7 @@ header {
           line-height: 22px;
           letter-spacing: -0.408px;
           font-family: SF Pro Text; }
-    /* line 488, style.scss */
+    /* line 348, style.scss */
     .industries-list-image {
       border-radius: 100px;
       background: #FFF;
@@ -580,7 +437,7 @@ header {
       height: 44px;
       width: 44px; }
 
-/* line 500, style.scss */
+/* line 360, style.scss */
 .proud-of {
   height: 830px;
   width: 100vw;
@@ -588,7 +445,7 @@ header {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   padding: 40px 0px 64px 0px; }
-  /* line 507, style.scss */
+  /* line 367, style.scss */
   .proud-of-logo {
     grid-column: 2/14;
     padding-right: 43vw;
@@ -598,7 +455,7 @@ header {
     line-height: 144%;
     letter-spacing: 0.326px;
     font-family: Inter; }
-  /* line 512, style.scss */
+  /* line 372, style.scss */
   .proud-of-suplogo {
     grid-column: 2/14;
     padding: 24px 43px 40px 0px;
@@ -608,17 +465,17 @@ header {
     line-height: 20px;
     letter-spacing: -0.24px;
     font-family: SF Pro Text; }
-  /* line 517, style.scss */
+  /* line 377, style.scss */
   .proud-of-projects {
     grid-column: 2/10;
     height: 58px;
     margin-left: -40px; }
-    /* line 521, style.scss */
+    /* line 381, style.scss */
     .proud-of-projects ul {
       display: inline-flex;
       justify-content: stretch;
       align-items: center; }
-      /* line 525, style.scss */
+      /* line 385, style.scss */
       .proud-of-projects ul li {
         display: flex;
         padding: 12px;
@@ -629,14 +486,14 @@ header {
         line-height: 22px;
         letter-spacing: -0.408px;
         font-family: SF Pro Text; }
-  /* line 533, style.scss */
+  /* line 393, style.scss */
   .proud-of-button {
     grid-column: -5/-3;
     margin-left: 32px;
     margin-top: 24px;
     display: flex;
     align-items: flex-start; }
-    /* line 539, style.scss */
+    /* line 399, style.scss */
     .proud-of-button input {
       height: 40px;
       border: none;
@@ -649,13 +506,13 @@ header {
       letter-spacing: -0.154px;
       font-family: SF Pro Text;
       background: #2D66EE; }
-  /* line 548, style.scss */
+  /* line 408, style.scss */
   .proud-of-element-title {
     padding-top: 40px;
     grid-column: 2/8;
     display: flex;
     flex-direction: column; }
-    /* line 553, style.scss */
+    /* line 413, style.scss */
     .proud-of-element-title-name {
       height: 84px;
       padding-bottom: 32px;
@@ -665,7 +522,7 @@ header {
       line-height: 144%;
       letter-spacing: 0.326px;
       font-family: Inter; }
-    /* line 558, style.scss */
+    /* line 418, style.scss */
     .proud-of-element-title-description {
       color: #101828;
       font-size: 15px;
@@ -674,12 +531,12 @@ header {
       letter-spacing: -0.24px;
       font-family: SF Pro Text;
       height: 60px; }
-  /* line 563, style.scss */
+  /* line 423, style.scss */
   .proud-of-element-about {
     grid-column: 2/8;
     display: flex;
     flex-direction: column; }
-    /* line 567, style.scss */
+    /* line 427, style.scss */
     .proud-of-element-about-instrument {
       padding-top: 40px;
       padding-right: 10vw;
@@ -690,7 +547,7 @@ header {
       line-height: 22px;
       letter-spacing: -0.408px;
       font-family: SF Pro Text; }
-    /* line 573, style.scss */
+    /* line 433, style.scss */
     .proud-of-element-about-category {
       padding-top: 40px;
       padding-right: 24vw;
@@ -704,18 +561,18 @@ header {
       line-height: 20px;
       letter-spacing: -0.24px;
       font-family: SF Pro Text; }
-      /* line 581, style.scss */
+      /* line 441, style.scss */
       .proud-of-element-about-category div {
         display: flex;
         align-items: center; }
-        /* line 584, style.scss */
+        /* line 444, style.scss */
         .proud-of-element-about-category div span {
           padding: 6px; }
-        /* line 587, style.scss */
+        /* line 447, style.scss */
         .proud-of-element-about-category div img {
           height: 24px;
           width: 24px; }
-    /* line 593, style.scss */
+    /* line 453, style.scss */
     .proud-of-element-about-user {
       padding-top: 40px;
       padding-right: 24vw;
@@ -724,7 +581,7 @@ header {
       flex-direction: column;
       height: 100px;
       gap: 8px; }
-      /* line 601, style.scss */
+      /* line 461, style.scss */
       .proud-of-element-about-user-number {
         color: #101828;
         font-size: 24px;
@@ -732,10 +589,10 @@ header {
         line-height: 144%;
         letter-spacing: 0.326px;
         font-family: Inter; }
-        /* line 603, style.scss */
+        /* line 463, style.scss */
         .proud-of-element-about-user-number span {
           padding: 0px 20px 0px 4px; }
-      /* line 607, style.scss */
+      /* line 467, style.scss */
       .proud-of-element-about-user-title {
         color: #667085;
         font-size: 13px;
@@ -745,18 +602,18 @@ header {
         font-family: SF Pro Text;
         display: flex;
         justify-content: flex-start; }
-        /* line 611, style.scss */
+        /* line 471, style.scss */
         .proud-of-element-about-user-title span {
           padding: 0px 20px 0px 4px; }
-    /* line 616, style.scss */
+    /* line 476, style.scss */
     .proud-of-element-about-system {
       padding: 40px 24px 64px 0px;
       display: inline-flex; }
-      /* line 619, style.scss */
+      /* line 479, style.scss */
       .proud-of-element-about-system button {
         background-color: transparent;
         border: none; }
-  /* line 625, style.scss */
+  /* line 485, style.scss */
   .proud-of-image {
     display: flex;
     align-items: center;
@@ -765,25 +622,25 @@ header {
     padding: 40px 0px 286px 0px;
     height: 554px; }
 
-/* line 634, style.scss */
+/* line 494, style.scss */
 .discuss-project {
   background-color: #2D66EE;
   height: 350px;
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: 45px 35px 190px 35px 45px; }
-  /* line 640, style.scss */
+  /* line 500, style.scss */
   .discuss-project-noise {
     background-image: url("../../../images/Noise1.png");
     mix-blend-mode: overlay; }
-  /* line 644, style.scss */
+  /* line 504, style.scss */
   .discuss-project-vector {
     z-index: 1;
     grid-row: 2/-2;
     grid-column: 1/-1;
     background: url("../../../images/Frame 108.svg") no-repeat;
     background-size: cover; }
-  /* line 651, style.scss */
+  /* line 511, style.scss */
   .discuss-project-text {
     z-index: 2;
     grid-column: 2/8;
@@ -792,7 +649,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px; }
-    /* line 659, style.scss */
+    /* line 519, style.scss */
     .discuss-project-text-title {
       padding-right: 21vw;
       color: #FFF;
@@ -801,7 +658,7 @@ header {
       line-height: 144%;
       letter-spacing: 0.326px;
       font-family: Inter; }
-    /* line 663, style.scss */
+    /* line 523, style.scss */
     .discuss-project-text-sup {
       padding-right: 14vw;
       color: #FFF;
@@ -810,7 +667,7 @@ header {
       line-height: 20px;
       letter-spacing: 0.326px;
       font-family: SF Pro Text; }
-  /* line 668, style.scss */
+  /* line 528, style.scss */
   .discuss-project-form {
     z-index: 2;
     grid-column: 8/14;
@@ -823,14 +680,14 @@ header {
     border-radius: 12px;
     background: #FFF;
     box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.16), 0px 0px 2px 0px rgba(0, 0, 0, 0.08); }
-    /* line 680, style.scss */
+    /* line 540, style.scss */
     .discuss-project-form-fields {
       margin-left: -48px;
       display: flex;
       align-items: flex-start;
       justify-content: stretch;
       gap: 24px; }
-      /* line 686, style.scss */
+      /* line 546, style.scss */
       .discuss-project-form-fields-field {
         display: flex;
         padding: 12px 0px;
@@ -838,7 +695,7 @@ header {
         align-items: flex-start;
         gap: 8px;
         width: 19vw; }
-        /* line 693, style.scss */
+        /* line 553, style.scss */
         .discuss-project-form-fields-field label {
           color: #667085;
           font-size: 13px;
@@ -847,7 +704,7 @@ header {
           letter-spacing: -0.078px;
           font-family: SF Pro Text;
           padding-bottom: 8px; }
-        /* line 696, style.scss */
+        /* line 556, style.scss */
         .discuss-project-form-fields-field input {
           width: 19vw;
           color: #101828;
@@ -857,7 +714,7 @@ header {
           letter-spacing: -0.408px;
           font-family: SF Pro Text;
           padding-bottom: 8px; }
-    /* line 702, style.scss */
+    /* line 562, style.scss */
     .discuss-project-form-button {
       display: flex;
       margin-left: 23vw;
@@ -865,7 +722,7 @@ header {
       align-items: flex-start;
       border-radius: 8px;
       background: #2D66EE; }
-      /* line 709, style.scss */
+      /* line 569, style.scss */
       .discuss-project-form-button input {
         background: transparent;
         border: none;
@@ -876,14 +733,14 @@ header {
         letter-spacing: -0.154px;
         font-family: SF Pro Text; }
 
-/* line 717, style.scss */
+/* line 577, style.scss */
 .stages {
   background-color: #ffffff;
   height: 810px;
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: 80px 52px 32px 566px 80px; }
-  /* line 723, style.scss */
+  /* line 583, style.scss */
   .stages-title {
     grid-column: 2/8;
     grid-row: 2/3;
@@ -893,11 +750,11 @@ header {
     line-height: 144%;
     letter-spacing: 0.326px;
     font-family: Inter; }
-  /* line 728, style.scss */
+  /* line 588, style.scss */
   .stages-list {
     grid-column: 2/-2;
     grid-row: 4/5; }
-    /* line 731, style.scss */
+    /* line 591, style.scss */
     .stages-list ul {
       width: 100%;
       height: 100%;
@@ -907,7 +764,7 @@ header {
       align-content: space-between;
       flex-wrap: wrap;
       padding-left: 0px; }
-      /* line 740, style.scss */
+      /* line 600, style.scss */
       .stages-list ul li {
         width: 27vw;
         display: grid;
@@ -917,14 +774,14 @@ header {
         border-radius: 12px;
         background-color: #FFF;
         box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.08), 0px 0px 2px 0px rgba(0, 0, 0, 0.08); }
-    /* line 751, style.scss */
+    /* line 611, style.scss */
     .stages-list-inf {
       grid-column: 1/5;
       grid-row: 1/2;
       display: inline-flex;
       flex-direction: column;
       align-items: flex-start; }
-      /* line 757, style.scss */
+      /* line 617, style.scss */
       .stages-list-inf-option {
         width: 14vw;
         display: flex;
@@ -936,12 +793,12 @@ header {
         line-height: 24px;
         letter-spacing: 0.38px;
         font-family: SF Pro Display; }
-        /* line 763, style.scss */
+        /* line 623, style.scss */
         .stages-list-inf-option img {
           width: 72px;
           height: 48px;
           padding-right: 24px; }
-      /* line 769, style.scss */
+      /* line 629, style.scss */
       .stages-list-inf-description {
         color: #101828;
         font-size: 15px;
@@ -950,7 +807,7 @@ header {
         letter-spacing: -0.24px;
         font-family: SF Pro Text;
         margin-top: 16px; }
-    /* line 774, style.scss */
+    /* line 634, style.scss */
     .stages-list-img {
       grid-column: 4/5;
       grid-row: 1/2;
@@ -959,11 +816,11 @@ header {
       margin: -24px -24px -24px -40px;
       border-radius: 12px;
       overflow: hidden; }
-      /* line 782, style.scss */
+      /* line 642, style.scss */
       .stages-list-img img {
         height: 100%; }
 
-/* line 788, style.scss */
+/* line 648, style.scss */
 .our-team {
   height: 580px;
   background-color: #F2F4F7;
@@ -971,14 +828,14 @@ header {
   display: inline-flex;
   padding: 80px 108px;
   align-items: flex-start; }
-  /* line 795, style.scss */
+  /* line 655, style.scss */
   .our-team-text {
     width: 43vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-right: 32px; }
-    /* line 801, style.scss */
+    /* line 661, style.scss */
     .our-team-text-title {
       display: flex;
       justify-content: flex-start;
@@ -988,7 +845,7 @@ header {
       line-height: 144%;
       letter-spacing: 0.326px;
       font-family: Inter; }
-    /* line 806, style.scss */
+    /* line 666, style.scss */
     .our-team-text-sup {
       padding-top: 32px;
       color: #101828;
@@ -997,20 +854,20 @@ header {
       line-height: 20px;
       letter-spacing: -0.24px;
       font-family: SF Pro Text; }
-    /* line 810, style.scss */
+    /* line 670, style.scss */
     .our-team-text-count {
       width: 100%;
       padding: 40px 0px 8px 0px;
       display: flex;
       align-items: flex-start;
       justify-content: space-between; }
-      /* line 816, style.scss */
+      /* line 676, style.scss */
       .our-team-text-count-element {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start; }
-        /* line 821, style.scss */
+        /* line 681, style.scss */
         .our-team-text-count-element-number {
           height: 69px;
           color: #101828;
@@ -1019,7 +876,7 @@ header {
           line-height: 144%;
           letter-spacing: 0.326px;
           font-family: Inter; }
-        /* line 825, style.scss */
+        /* line 685, style.scss */
         .our-team-text-count-element-description {
           padding: 8px 0px;
           height: 28px;
@@ -1029,7 +886,7 @@ header {
           line-height: 20px;
           letter-spacing: -0.24px;
           font-family: SF Pro Text; }
-    /* line 832, style.scss */
+    /* line 692, style.scss */
     .our-team-text-ps {
       padding-top: 32px;
       color: #101828;
@@ -1038,14 +895,14 @@ header {
       line-height: 20px;
       letter-spacing: -0.24px;
       font-family: SF Pro Text; }
-  /* line 837, style.scss */
+  /* line 697, style.scss */
   .our-team-video {
     width: 42vw;
     height: 422px;
     position: relative;
     display: flex;
     justify-content: center; }
-    /* line 843, style.scss */
+    /* line 703, style.scss */
     .our-team-video img {
       position: absolute;
       width: 38vw;
@@ -1055,13 +912,13 @@ header {
       border-radius: 16px;
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.48) 0%, rgba(0, 0, 0, 0.48) 100%), lightgray 50%/cover no-repeat;
       filter: blur(16px); }
-    /* line 853, style.scss */
+    /* line 713, style.scss */
     .our-team-video-miniature {
       z-index: 2;
       position: absolute;
       display: flex;
       justify-content: center; }
-      /* line 858, style.scss */
+      /* line 718, style.scss */
       .our-team-video-miniature img {
         background: transparent;
         border-radius: 0px;
@@ -1069,7 +926,7 @@ header {
         width: 42vw;
         height: 392px;
         filter: none; }
-      /* line 866, style.scss */
+      /* line 726, style.scss */
       .our-team-video-miniature-play {
         z-index: 4;
         width: 60px;
@@ -1080,23 +937,23 @@ header {
         align-items: flex-start;
         border-radius: 100px;
         background: #2D66EE; }
-        /* line 876, style.scss */
+        /* line 736, style.scss */
         .our-team-video-miniature-play img {
           width: 36px;
           height: 36px; }
 
-/* line 884, style.scss */
+/* line 744, style.scss */
 .get-book {
   height: 590px;
   width: 100%;
   padding: 80px 0px;
   background: #2D66EE;
   position: relative; }
-  /* line 890, style.scss */
+  /* line 750, style.scss */
   .get-book-noise {
     background-image: url("../../../images/Noise1.png");
     mix-blend-mode: overlay; }
-  /* line 894, style.scss */
+  /* line 754, style.scss */
   .get-book-vector {
     z-index: 1;
     height: 260px;
@@ -1104,7 +961,7 @@ header {
     background-size: cover;
     filter: brightness(1.1);
     margin-top: 86px; }
-  /* line 902, style.scss */
+  /* line 762, style.scss */
   .get-book-content {
     background: transparent;
     position: absolute;
@@ -1113,7 +970,7 @@ header {
     margin-top: -346px;
     grid-template-columns: repeat(14, 1fr);
     grid-template-rows: 104px 40px 286px; }
-    /* line 910, style.scss */
+    /* line 770, style.scss */
     .get-book-content-title {
       grid-column: 2/8;
       grid-row: 1/2;
@@ -1123,7 +980,7 @@ header {
       line-height: 144%;
       letter-spacing: 0.326px;
       font-family: Inter; }
-    /* line 915, style.scss */
+    /* line 775, style.scss */
     .get-book-content-form {
       grid-column: 2/8;
       grid-row: 3/4;
@@ -1135,14 +992,14 @@ header {
       border-radius: 12px;
       background: #FFF;
       box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.16), 0px 0px 2px 0px rgba(0, 0, 0, 0.08); }
-      /* line 926, style.scss */
+      /* line 786, style.scss */
       .get-book-content-form-fields {
         display: grid;
         height: 198px;
         padding-bottom: 24px;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr); }
-        /* line 932, style.scss */
+        /* line 792, style.scss */
         .get-book-content-form-fields-phone {
           display: flex;
           padding: 16px 0px;
@@ -1151,7 +1008,7 @@ header {
           justify-content: flex-start;
           grid-column: 1/2;
           grid-row: 1/2; }
-          /* line 936, style.scss */
+          /* line 796, style.scss */
           .get-book-content-form-fields-phone label {
             color: #667085;
             font-size: 13px;
@@ -1160,7 +1017,7 @@ header {
             letter-spacing: -0.078px;
             font-family: SF Pro Text;
             padding-bottom: 8px; }
-          /* line 939, style.scss */
+          /* line 799, style.scss */
           .get-book-content-form-fields-phone input {
             color: #101828;
             font-size: 17px;
@@ -1170,7 +1027,7 @@ header {
             font-family: SF Pro Text;
             padding-bottom: 8px;
             width: 98%; }
-        /* line 944, style.scss */
+        /* line 804, style.scss */
         .get-book-content-form-fields-fullname {
           display: flex;
           padding: 16px 0px;
@@ -1180,7 +1037,7 @@ header {
           grid-column: 2/3;
           grid-row: 1/2;
           padding-top: 40px; }
-          /* line 949, style.scss */
+          /* line 809, style.scss */
           .get-book-content-form-fields-fullname input {
             color: #101828;
             font-size: 17px;
@@ -1190,7 +1047,7 @@ header {
             font-family: SF Pro Text;
             padding-bottom: 8px;
             width: 98%; }
-        /* line 954, style.scss */
+        /* line 814, style.scss */
         .get-book-content-form-fields-email {
           display: flex;
           padding: 16px 0px;
@@ -1199,7 +1056,7 @@ header {
           justify-content: flex-start;
           grid-column: 1/3;
           grid-row: 2/3; }
-          /* line 958, style.scss */
+          /* line 818, style.scss */
           .get-book-content-form-fields-email label {
             color: #667085;
             font-size: 13px;
@@ -1208,7 +1065,7 @@ header {
             letter-spacing: -0.078px;
             font-family: SF Pro Text;
             padding-bottom: 8px; }
-          /* line 961, style.scss */
+          /* line 821, style.scss */
           .get-book-content-form-fields-email input {
             color: #101828;
             font-size: 17px;
@@ -1218,7 +1075,7 @@ header {
             font-family: SF Pro Text;
             padding-bottom: 8px;
             width: 98%; }
-      /* line 967, style.scss */
+      /* line 827, style.scss */
       .get-book-content-form-button {
         display: flex;
         padding: 11px 24px;
@@ -1227,7 +1084,7 @@ header {
         margin-left: 60%;
         border-radius: 8px;
         background: #2D66EE; }
-        /* line 975, style.scss */
+        /* line 835, style.scss */
         .get-book-content-form-button input {
           background: transparent;
           border: none;
@@ -1238,26 +1095,26 @@ header {
           letter-spacing: -0.154px;
           font-family: SF Pro Text;
           text-align: center; }
-    /* line 983, style.scss */
+    /* line 843, style.scss */
     .get-book-content-img {
       grid-column: 8/-1;
       grid-row: 1/4;
       display: flex;
       justify-content: center;
       align-items: center; }
-      /* line 989, style.scss */
+      /* line 849, style.scss */
       .get-book-content-img img {
         height: 520px;
         width: auto; }
 
-/* line 996, style.scss */
+/* line 856, style.scss */
 .faq {
   height: 672px;
   padding: 80px 108px;
   display: flex;
   flex-direction: column;
   align-items: flex-start; }
-  /* line 1002, style.scss */
+  /* line 862, style.scss */
   .faq-title {
     color: #101828;
     font-size: 36px;
@@ -1265,27 +1122,27 @@ header {
     line-height: 144%;
     letter-spacing: 0.326px;
     font-family: Inter; }
-  /* line 1003, style.scss */
+  /* line 863, style.scss */
   .faq-questions {
     width: 100%;
     padding-top: 32px;
     display: flex;
     align-items: flex-start; }
-    /* line 1008, style.scss */
+    /* line 868, style.scss */
     .faq-questions ul {
       width: 100%;
       max-height: 420px;
       display: inline-flex;
       flex-direction: column;
       flex-wrap: wrap; }
-      /* line 1014, style.scss */
+      /* line 874, style.scss */
       .faq-questions ul li {
         width: 40vw;
         padding: 12px 0px;
         display: flex;
         align-items: center;
         justify-content: stretch; }
-        /* line 1021, style.scss */
+        /* line 881, style.scss */
         .faq-questions ul li button {
           height: 60px;
           width: 60px;
@@ -1295,13 +1152,13 @@ header {
           background: #FFF;
           box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
           display: flex; }
-    /* line 1033, style.scss */
+    /* line 893, style.scss */
     .faq-questions-element {
       width: 83%;
       display: flex;
       flex-direction: column;
       align-items: flex-start; }
-      /* line 1038, style.scss */
+      /* line 898, style.scss */
       .faq-questions-element-question {
         color: #101828;
         font-size: 20px;
@@ -1310,7 +1167,7 @@ header {
         letter-spacing: 0.38px;
         font-family: SF Pro Display;
         width: 100%; }
-      /* line 1042, style.scss */
+      /* line 902, style.scss */
       .faq-questions-element-answer {
         width: 94%;
         padding-top: 24px;
@@ -1320,7 +1177,7 @@ header {
         line-height: 20px;
         letter-spacing: -0.24px;
         font-family: SF Pro Text; }
-        /* line 1046, style.scss */
+        /* line 906, style.scss */
         .faq-questions-element-answer-b {
           color: #101828;
           font-size: 15px;
@@ -1329,14 +1186,14 @@ header {
           letter-spacing: -0.32px;
           font-family: SF Pro Text; }
 
-/* line 1051, style.scss */
+/* line 911, style.scss */
 footer {
   width: 100vw;
   height: 223px;
   display: grid;
   grid-template-columns: repeat(14, 1fr); }
 
-/* line 1057, style.scss */
+/* line 917, style.scss */
 .footer {
   grid-column: 2/-2;
   background: #101828;
@@ -1348,7 +1205,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 40px; }
-  /* line 1068, style.scss */
+  /* line 928, style.scss */
   .footer-logo {
     width: 217px;
     height: 24px;
@@ -1358,21 +1215,21 @@ footer {
     line-height: 18px;
     letter-spacing: -0.154px;
     font-family: Inter; }
-  /* line 1073, style.scss */
+  /* line 933, style.scss */
   .footer-list {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     align-items: center; }
-    /* line 1078, style.scss */
+    /* line 938, style.scss */
     .footer-list li {
       width: 20.3vw;
       height: 0.277vw; }
-      /* line 1081, style.scss */
+      /* line 941, style.scss */
       .footer-list li a {
         text-decoration: none;
         color: #FFF; }
-    /* line 1086, style.scss */
+    /* line 946, style.scss */
     .footer-list-sub {
       color: #98A2B3;
       font-size: 14px;
@@ -1383,13 +1240,13 @@ footer {
       display: flex;
       align-items: center;
       margin-bottom: -16px; }
-    /* line 1092, style.scss */
+    /* line 952, style.scss */
     .footer-list-img {
       width: 24px;
       height: 24px;
       margin-right: 8px;
       padding-bottom: 2px; }
-    /* line 1098, style.scss */
+    /* line 958, style.scss */
     .footer-list-inf {
       color: #FFF;
       font-size: 15px;
@@ -1398,17 +1255,17 @@ footer {
       letter-spacing: -0.408px;
       font-family: SF Pro Text;
       margin-top: -4px; }
-  /* line 1103, style.scss */
+  /* line 963, style.scss */
   .footer-ps {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-top: 24px; }
-    /* line 1108, style.scss */
+    /* line 968, style.scss */
     .footer-ps img {
       width: 30px;
       height: 16px; }
-    /* line 1112, style.scss */
+    /* line 972, style.scss */
     .footer-ps span {
       color: #FFF;
       font-size: 13px;
@@ -1418,44 +1275,44 @@ footer {
       font-family: SF Pro Text; }
 
 @media (max-width: 1439px) {
-  /* line 1119, style.scss */
+  /* line 979, style.scss */
   header {
     height: 90px;
     padding-top: 16px;
     grid-template-columns: repeat(12, 1fr); }
-  /* line 1124, style.scss */
+  /* line 984, style.scss */
   .header-close {
     grid-column: 1/-1;
     max-height: 90px;
     padding: 25px 32px;
     display: grid;
     grid-template-columns: repeat(12, 1fr); }
-    /* line 1130, style.scss */
+    /* line 990, style.scss */
     .header-close-element-three-bars {
       grid-column: 1/2;
       display: inline-flex;
       width: 59px;
       height: 40px; }
-    /* line 1136, style.scss */
+    /* line 996, style.scss */
     .header-close-element-cross {
       display: none; }
-    /* line 1139, style.scss */
+    /* line 999, style.scss */
     .header-close-element-logo {
       grid-column: 6/10;
       margin-left: 50px; }
-    /* line 1143, style.scss */
+    /* line 1003, style.scss */
     .header-close-element-menu {
       display: none; }
-    /* line 1146, style.scss */
+    /* line 1006, style.scss */
     .header-close-element-link {
       grid-column-end: -1; }
-      /* line 1148, style.scss */
+      /* line 1008, style.scss */
       .header-close-element-link-tel {
         display: none; }
-      /* line 1151, style.scss */
+      /* line 1011, style.scss */
       .header-close-element-link-email {
         gap: 8px; }
-  /* line 1156, style.scss */
+  /* line 1016, style.scss */
   .header-open {
     height: 668px;
     margin-top: -16px;
@@ -1465,19 +1322,19 @@ footer {
     display: grid;
     grid-template-columns: repeat(14, 1fr);
     grid-template-rows: 40px 60px 42px 48px 52px 258px 52px 28px 88px; }
-    /* line 1165, style.scss */
+    /* line 1025, style.scss */
     .header-open a {
       text-decoration: none; }
-    /* line 1166, style.scss */
+    /* line 1026, style.scss */
     .header-open-element-three-bars {
       display: none; }
-    /* line 1169, style.scss */
+    /* line 1029, style.scss */
     .header-open-element-cross {
       grid-row: 2/3;
       grid-column: -3/-2;
       margin-left: -8px;
       padding: 12px; }
-    /* line 1175, style.scss */
+    /* line 1035, style.scss */
     .header-open-element-logo {
       grid-column: 5/11;
       grid-row: 4/5;
@@ -1488,10 +1345,10 @@ footer {
       line-height: 48px;
       letter-spacing: -0.154px;
       font-family: Inter; }
-      /* line 1180, style.scss */
+      /* line 1040, style.scss */
       .header-open-element-logo a {
         color: #2D66EE; }
-    /* line 1182, style.scss */
+    /* line 1042, style.scss */
     .header-open-element-menu {
       grid-row: 6/7;
       grid-column: 6/10;
@@ -1499,7 +1356,7 @@ footer {
       flex-direction: column;
       justify-content: stretch;
       align-items: center; }
-      /* line 1189, style.scss */
+      /* line 1049, style.scss */
       .header-open-element-menu-item {
         color: #101828;
         font-size: 36px;
@@ -1507,23 +1364,23 @@ footer {
         line-height: 144%;
         letter-spacing: 0.326px;
         font-family: Inter; }
-        /* line 1191, style.scss */
+        /* line 1051, style.scss */
         .header-open-element-menu-item a {
           color: #101828; }
-    /* line 1194, style.scss */
+    /* line 1054, style.scss */
     .header-open-element-link {
       grid-column: 2/-2;
       grid-row: 8/9;
       display: flex;
       justify-content: center;
       align-items: center; }
-      /* line 1200, style.scss */
+      /* line 1060, style.scss */
       .header-open-element-link-tel {
         width: 56vw;
         display: flex;
         justify-content: space-between;
         align-items: center; }
-        /* line 1205, style.scss */
+        /* line 1065, style.scss */
         .header-open-element-link-tel-number {
           color: #2D66EE;
           font-size: 18px;
@@ -1532,13 +1389,13 @@ footer {
           letter-spacing: -0.154px;
           font-family: SF Pro Text;
           padding-right: 24px; }
-      /* line 1210, style.scss */
+      /* line 1070, style.scss */
       .header-open-element-link-email {
         width: 25vw;
         display: flex;
         justify-content: space-between;
         align-items: center; }
-        /* line 1215, style.scss */
+        /* line 1075, style.scss */
         .header-open-element-link-email-address {
           color: #2D66EE;
           font-size: 18px;
@@ -1548,29 +1405,37 @@ footer {
           font-family: SF Pro Text;
           padding-left: 16px;
           padding-right: -8px; }
-      /* line 1221, style.scss */
+      /* line 1081, style.scss */
       .header-open-element-link-image {
         width: 28px;
         padding-left: 8px; }
-        /* line 1224, style.scss */
+        /* line 1084, style.scss */
         .header-open-element-link-image-second {
           width: 28px;
           padding-left: 8px; }
-  /* line 1231, style.scss */
+  /* line 1091, style.scss */
   .activity {
     height: 762px;
     grid-template-columns: repeat(18, 1fr);
     grid-template-rows: 138px 204px 322px 32px;
     gap: 32px; }
-    /* line 1237, style.scss */
+    /* line 1092, style.scss */
+    .activity-left::before {
+      background-size: 16.5vw auto;
+      background-position-x: calc(100% - 16.5vw - 20px); }
+    /* line 1096, style.scss */
+    .activity-right::after {
+      background-size: 16.5vw auto;
+      background-position-x: calc(100%); }
+    /* line 1104, style.scss */
     .activity-info {
       grid-column: 2/11;
       grid-row: 2/3;
       margin-top: -40px; }
-      /* line 1241, style.scss */
+      /* line 1108, style.scss */
       .activity-info-title {
         font-size: 28px; }
-    /* line 1245, style.scss */
+    /* line 1112, style.scss */
     .activity-leave-contacts {
       grid-column: 2/11;
       grid-row: 3/4;
@@ -1583,359 +1448,441 @@ footer {
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start; }
-      /* line 1257, style.scss */
+      /* line 1124, style.scss */
       .activity-leave-contacts span {
         width: 100%;
         margin-top: -16px;
         font-size: 16px; }
-      /* line 1262, style.scss */
+      /* line 1129, style.scss */
       .activity-leave-contacts-form {
         display: grid;
         grid-template-columns: repeat(10, 1fr); }
-        /* line 1265, style.scss */
+        /* line 1132, style.scss */
         .activity-leave-contacts-form-field {
           grid-column: 1/11;
           display: flex;
           flex-direction: column;
           justify-content: space-between; }
-        /* line 1271, style.scss */
+        /* line 1138, style.scss */
         .activity-leave-contacts-form-button {
           grid-column: 1/6; }
-  /* line 1277, style.scss */
+  /* line 1144, style.scss */
   .development-cycle {
     grid-template-columns: repeat(18, 1fr);
     height: 532px; }
-    /* line 1280, style.scss */
+    /* line 1147, style.scss */
     .development-cycle-head {
       grid-column: 2/10;
       padding-top: 32px; }
-      /* line 1283, style.scss */
+      /* line 1150, style.scss */
       .development-cycle-head-title {
         font-size: 28px; }
-    /* line 1287, style.scss */
+    /* line 1154, style.scss */
     .development-cycle-technologies {
       grid-column: 2/10;
       margin-right: -72px;
       padding-right: 0px; }
-      /* line 1291, style.scss */
+      /* line 1158, style.scss */
       .development-cycle-technologies-sub {
         font-size: 14px; }
-    /* line 1295, style.scss */
+    /* line 1162, style.scss */
     .development-cycle-list {
       grid-column: -9/-3;
       padding-top: 82px; }
-      /* line 1298, style.scss */
+      /* line 1165, style.scss */
       .development-cycle-list ul li a {
         font-size: 18px; }
-  /* line 1303, style.scss */
+  /* line 1170, style.scss */
   .industries {
     height: 670px;
     grid-template-columns: repeat(18, 1fr);
     padding: 30px 0px 20px 0px;
     gap: 0px;
     align-items: flex-start; }
-    /* line 1309, style.scss */
+    /* line 1176, style.scss */
     .industries-logo {
       grid-column: 2/10;
       padding: 16px 0px;
       font-size: 28px; }
-    /* line 1314, style.scss */
+    /* line 1181, style.scss */
     .industries-list {
       height: 456px;
       margin-top: -32px; }
-      /* line 1317, style.scss */
+      /* line 1184, style.scss */
       .industries-list ul li {
         width: 40vw;
         gap: 8px; }
-  /* line 1323, style.scss */
+  /* line 1190, style.scss */
   .proud-of {
     grid-template-columns: repeat(18, 1fr);
     grid-template-rows: 40px 40px 24px 40px 24px 52px 36px 40px 32px 60px 32px 22px 32px 24px 32px 53px 32px 40px 45px;
     height: 700px;
     padding: 0px; }
-    /* line 1328, style.scss */
+    /* line 1195, style.scss */
     .proud-of-logo {
       grid-column: 2/-2;
       grid-row: 2/3;
       font-size: 28px; }
-    /* line 1333, style.scss */
+    /* line 1200, style.scss */
     .proud-of-suplogo {
       grid-column: 2/-2;
       grid-row: 4/5;
       padding: 0px 35vw 0px 0px;
       font-size: 14px; }
-    /* line 1339, style.scss */
+    /* line 1206, style.scss */
     .proud-of-projects {
       grid-column: 2/-2;
       grid-row: 6/7;
       display: flex;
       justify-content: stretch;
       align-items: flex-start; }
-      /* line 1345, style.scss */
+      /* line 1212, style.scss */
       .proud-of-projects ul li {
         font-size: 14px; }
-    /* line 1349, style.scss */
+    /* line 1216, style.scss */
     .proud-of-button {
       grid-column: -7/-2;
       grid-row: 8/9;
       margin-top: 0px;
       padding: 0px; }
-    /* line 1355, style.scss */
+    /* line 1222, style.scss */
     .proud-of-element-title {
       grid-column: 2/-7;
       padding-top: 0px;
       grid-row: 8/11; }
-      /* line 1359, style.scss */
+      /* line 1226, style.scss */
       .proud-of-element-title-name {
         font-size: 28px;
         height: 72px; }
-      /* line 1363, style.scss */
+      /* line 1230, style.scss */
       .proud-of-element-title-description {
         font-size: 14px;
         padding-top: 0px;
         margin-right: 8px; }
-    /* line 1369, style.scss */
+    /* line 1236, style.scss */
     .proud-of-element-about {
       grid-column: 2/10;
       grid-row: 12/19; }
-      /* line 1372, style.scss */
+      /* line 1239, style.scss */
       .proud-of-element-about-instrument {
         font-size: 14px;
         padding-top: 0px;
         height: 22px; }
-      /* line 1377, style.scss */
+      /* line 1244, style.scss */
       .proud-of-element-about-category {
         font-size: 14px;
         padding-top: 32px;
         height: 56px; }
-      /* line 1382, style.scss */
+      /* line 1249, style.scss */
       .proud-of-element-about-user {
         padding-top: 32px;
         height: 85px;
         padding-right: 11vw; }
-        /* line 1386, style.scss */
+        /* line 1253, style.scss */
         .proud-of-element-about-user-number {
           font-size: 20px; }
-        /* line 1387, style.scss */
+        /* line 1254, style.scss */
         .proud-of-element-about-user-title {
           font-size: 12px; }
-      /* line 1389, style.scss */
+      /* line 1256, style.scss */
       .proud-of-element-about-system {
         padding: 32px 5vw 45px 0px; }
-    /* line 1393, style.scss */
+    /* line 1260, style.scss */
     .proud-of-image {
       grid-column: -10/-2;
       grid-row: 12/18;
       padding: 32px 24px 45px 16px;
       height: auto; }
-      /* line 1398, style.scss */
+      /* line 1265, style.scss */
       .proud-of-image img {
         width: 50vw;
         height: auto; }
-  /* line 1404, style.scss */
+  /* line 1271, style.scss */
   .discuss-project {
     height: 428px;
     grid-template-columns: repeat(18, 1fr);
     grid-template-rows: 22px 80px 6px 26px 40px 32px 60px 130px 32px; }
-    /* line 1408, style.scss */
+    /* line 1275, style.scss */
     .discuss-project-noise {
       background-image: url("../../../images/Noise2.png"); }
-    /* line 1411, style.scss */
+    /* line 1278, style.scss */
     .discuss-project-vector {
       grid-row: 4/8;
       grid-column: 2/-2;
       background-size: 100%; }
-    /* line 1416, style.scss */
+    /* line 1283, style.scss */
     .discuss-project-text {
       grid-column: 2/10;
       grid-row: 2/6;
       gap: 32px; }
-      /* line 1420, style.scss */
+      /* line 1287, style.scss */
       .discuss-project-text-title {
         font-size: 28px;
         padding-right: 17vw; }
-      /* line 1424, style.scss */
+      /* line 1291, style.scss */
       .discuss-project-text-sup {
         font-size: 14px;
         padding-right: 0vw; }
-    /* line 1429, style.scss */
+    /* line 1296, style.scss */
     .discuss-project-form {
       grid-column: 2/-4;
       grid-row: -4/-2; }
-      /* line 1432, style.scss */
+      /* line 1299, style.scss */
       .discuss-project-form-fields {
         margin: -16px 0px 16px 0px; }
-        /* line 1434, style.scss */
+        /* line 1301, style.scss */
         .discuss-project-form-fields-field {
           width: 33.8vw; }
-          /* line 1436, style.scss */
+          /* line 1303, style.scss */
           .discuss-project-form-fields-field input {
             width: 33.8vw; }
-      /* line 1441, style.scss */
+      /* line 1308, style.scss */
       .discuss-project-form-button {
         margin: 0px 0px -16px 48vw; }
-  /* line 1446, style.scss */
+  /* line 1313, style.scss */
   .stages {
     height: 1340px;
     grid-template-columns: repeat(18, 1fr);
     grid-template-rows: 32px 40px 40px 1192px 36px; }
-    /* line 1450, style.scss */
+    /* line 1317, style.scss */
     .stages-title {
       grid-column: 2/-4;
       font-size: 28px; }
-    /* line 1455, style.scss */
+    /* line 1322, style.scss */
     .stages-list ul li {
       width: 87vw;
       grid-template-columns: repeat(5, 1fr); }
-    /* line 1460, style.scss */
+    /* line 1327, style.scss */
     .stages-list-inf-option {
       width: 20vw; }
-    /* line 1461, style.scss */
+    /* line 1328, style.scss */
     .stages-list-inf-description {
       font-size: 14px; }
-    /* line 1463, style.scss */
+    /* line 1330, style.scss */
     .stages-list-img {
       grid-column: 5/6;
       justify-content: center;
       margin: -24px -24px -24px 20px; }
-  /* line 1470, style.scss */
+  /* line 1337, style.scss */
   .our-team {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: 144px 420px 228px;
     height: 884px;
     padding: 40px 32px 52px 32px; }
-    /* line 1476, style.scss */
+    /* line 1343, style.scss */
     .our-team-text {
       width: 91vw;
       padding-right: 0px; }
-      /* line 1479, style.scss */
+      /* line 1346, style.scss */
       .our-team-text-title {
         font-size: 28px;
         padding-right: 38vw; }
-      /* line 1483, style.scss */
+      /* line 1350, style.scss */
       .our-team-text-sup {
         font-size: 14px;
         padding-right: 38vw; }
-      /* line 1487, style.scss */
+      /* line 1354, style.scss */
       .our-team-text-count {
         padding: 504px 100px 8px 0px; }
-      /* line 1488, style.scss */
+      /* line 1355, style.scss */
       .our-team-text-ps {
         font-size: 14px;
         padding-right: 32px; }
-    /* line 1493, style.scss */
+    /* line 1360, style.scss */
     .our-team-video {
       width: 91vw;
       height: 420px;
       grid-row: 2/3; }
-      /* line 1497, style.scss */
+      /* line 1364, style.scss */
       .our-team-video img {
         width: 88vw;
         height: 420px; }
-      /* line 1502, style.scss */
+      /* line 1369, style.scss */
       .our-team-video-miniature img {
         width: 91vw;
         height: 420px; }
-      /* line 1507, style.scss */
+      /* line 1374, style.scss */
       .our-team-video-miniature-play img {
         width: 36px;
         height: 36px; }
-  /* line 1515, style.scss */
+  /* line 1382, style.scss */
   .get-book {
     height: 724px; }
-    /* line 1517, style.scss */
+    /* line 1384, style.scss */
     .get-book-noise {
       background-image: url("../../../images/Noise2.png"); }
-    /* line 1518, style.scss */
+    /* line 1385, style.scss */
     .get-book-vector {
       display: none; }
-    /* line 1519, style.scss */
+    /* line 1386, style.scss */
     .get-book-content {
       margin-top: 0px;
       grid-template-columns: repeat(18, 1fr);
       grid-template-rows: 80px 54px 430px;
       width: 100%; }
-      /* line 1524, style.scss */
+      /* line 1391, style.scss */
       .get-book-content-title {
         grid-column: 3/-6;
         font-size: 28px; }
-      /* line 1528, style.scss */
+      /* line 1395, style.scss */
       .get-book-content-form {
         grid-column: 3/-9;
         padding: 32px; }
-        /* line 1531, style.scss */
+        /* line 1398, style.scss */
         .get-book-content-form-fields {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: stretch;
           padding-bottom: 48px; }
-        /* line 1538, style.scss */
+        /* line 1405, style.scss */
         .get-book-content-form-button {
           width: 30vw;
           margin: 48px 0px -48px 0px; }
-      /* line 1543, style.scss */
+      /* line 1410, style.scss */
       .get-book-content-img {
         grid-column: -8/-2;
         grid-row: 3/4; }
-        /* line 1546, style.scss */
+        /* line 1413, style.scss */
         .get-book-content-img img {
           height: 428px; }
-  /* line 1550, style.scss */
+  /* line 1417, style.scss */
   .faq {
     height: 780px;
     padding: 36px 36px; }
-    /* line 1553, style.scss */
+    /* line 1420, style.scss */
     .faq-title {
       font-size: 28px; }
-    /* line 1554, style.scss */
+    /* line 1421, style.scss */
     .faq-questions {
       padding: 32px 36px 0px 0px; }
-      /* line 1556, style.scss */
+      /* line 1423, style.scss */
       .faq-questions ul {
         max-height: 654px; }
-        /* line 1558, style.scss */
+        /* line 1425, style.scss */
         .faq-questions ul li {
           width: 84vw; }
-      /* line 1560, style.scss */
+      /* line 1427, style.scss */
       .faq-questions-element {
         width: 74vw; }
-  /* line 1563, style.scss */
+  /* line 1430, style.scss */
   footer {
     height: 241px; }
-  /* line 1564, style.scss */
+  /* line 1431, style.scss */
   .footer {
     grid-column: 1/-1;
     max-height: 241px; }
-    /* line 1568, style.scss */
+    /* line 1435, style.scss */
     .footer-list li {
       width: 22.9vw;
       height: 0.277vw; } }
 
 @media (max-width: 767px) {
-  /* line 1576, style.scss */
+  /* line 1443, style.scss */
   header {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 12px 48px 16px 484px 60px;
     height: 620px; }
-  /* line 1581, style.scss */
+  /* line 1448, style.scss */
   .header-close {
     height: 90px;
     padding: 16px; }
-    /* line 1584, style.scss */
+    /* line 1451, style.scss */
     .header-close-element-logo {
       margin-left: -32px; }
-    /* line 1588, style.scss */
+    /* line 1455, style.scss */
     .header-close-element-link-email {
       display: none; }
-  /* line 1593, style.scss */
+  /* line 1460, style.scss */
+  .header-open {
+    height: 642px;
+    margin-top: -16px;
+    grid-column: 1/-1;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 22px 60px 16px 18px 52px 258px 52px 104px 60px; }
+    /* line 1466, style.scss */
+    .header-open-element-cross {
+      margin: 0px 32px 0px 0px;
+      display: flex;
+      flex-direction: row-reverse;
+      grid-row: 2/3;
+      grid-column: -2/-1;
+      padding: 12px; }
+    /* line 1474, style.scss */
+    .header-open-element-logo {
+      grid-column: 4/6;
+      grid-row: 4/5;
+      min-width: 120px;
+      margin-left: 16px;
+      color: #2D66EE;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 18px;
+      letter-spacing: -0.154px;
+      font-family: Inter; }
+    /* line 1481, style.scss */
+    .header-open-element-menu {
+      grid-row: 6/7;
+      grid-column: 4/6;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      /* line 1488, style.scss */
+      .header-open-element-menu-item {
+        font-size: 24px; }
+    /* line 1490, style.scss */
+    .header-open-element-link {
+      grid-column: 3/-3;
+      grid-row: 8/9;
+      max-width: 174px;
+      margin-left: 20px;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center; }
+      /* line 1498, style.scss */
+      .header-open-element-link-tel {
+        width: 42vw;
+        margin-left: -10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap; }
+        /* line 1505, style.scss */
+        .header-open-element-link-tel-number {
+          font-size: 14px;
+          padding: 0px 0px 0px 19px; }
+      /* line 1510, style.scss */
+      .header-open-element-link-email {
+        width: 42vw; }
+        /* line 1512, style.scss */
+        .header-open-element-link-email-address {
+          font-size: 14px;
+          padding: 0px 8px 0px 0px; }
+      /* line 1517, style.scss */
+      .header-open-element-link-image {
+        width: 24px;
+        padding-left: 8px; }
+        /* line 1520, style.scss */
+        .header-open-element-link-image-second {
+          width: 24px;
+          padding-left: 8px; }
+  /* line 1527, style.scss */
   .activity {
     background-position: 100% 90%;
     height: 1192px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 72px 204px 450px 322px 64px; }
-    /* line 1598, style.scss */
+    /* line 1528, style.scss */
+    .activity-left::before {
+      background-size: 32.5vw auto;
+      background-position-x: calc(100% - 32.5vw - 16px); }
+    /* line 1532, style.scss */
+    .activity-right::after {
+      background-size: 32.5vw auto;
+      background-position-x: calc(100%); }
+    /* line 1540, style.scss */
     .activity-info {
       grid-column: 1/-1;
       grid-row: 1/3;
@@ -1944,7 +1891,7 @@ footer {
       box-shadow: 0px 32px 16px 16px #F2F4F7;
       margin: 0px;
       padding: 124px 10px 0px 24px; }
-    /* line 1607, style.scss */
+    /* line 1549, style.scss */
     .activity-leave-contacts-back {
       z-index: 2;
       display: grid;
@@ -1952,7 +1899,7 @@ footer {
       grid-row: -3/-1;
       background-color: #F2F4F7;
       box-shadow: 0px 0px 32px 16px #F2F4F7; }
-    /* line 1615, style.scss */
+    /* line 1557, style.scss */
     .activity-leave-contacts {
       grid-column: 1/8;
       grid-row: 4/5;
@@ -1960,294 +1907,294 @@ footer {
       margin-left: 24px;
       margin-right: 8px;
       padding: 32px 32px 32px 32px; }
-  /* line 1624, style.scss */
+  /* line 1566, style.scss */
   .development-cycle {
     grid-template-columns: repeat(8, 1fr);
     height: 848px; }
-    /* line 1628, style.scss */
+    /* line 1570, style.scss */
     .development-cycle-technologies {
       grid-column: 1/7;
       gap: 0px; }
-    /* line 1633, style.scss */
+    /* line 1575, style.scss */
     .development-cycle-list {
       grid-column: 1/6;
       padding-left: 3.75vw;
       padding-top: 0px;
       margin-top: -16px; }
-  /* line 1640, style.scss */
+  /* line 1582, style.scss */
   .industries {
     grid-template-columns: repeat(8, 1fr);
     height: 600px;
     padding: 16px; }
-    /* line 1645, style.scss */
+    /* line 1587, style.scss */
     .industries-logo {
       grid-column: 1/-1;
       padding: 8px 0px 8px 16px;
       font-size: 26px; }
-    /* line 1651, style.scss */
+    /* line 1593, style.scss */
     .industries-list {
       grid-column: 1/-1;
       height: 488px;
       margin-top: 0px; }
-      /* line 1656, style.scss */
+      /* line 1598, style.scss */
       .industries-list ul {
         align-items: stretch;
         margin-left: -24px; }
-        /* line 1660, style.scss */
+        /* line 1602, style.scss */
         .industries-list ul li a {
           font-size: 14px; }
-  /* line 1666, style.scss */
+  /* line 1608, style.scss */
   .proud-of {
     padding: 16px 16px 75px 16px;
     height: 1043px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 32px 32px 60px 32px 60px 32px 225px 32px 40px 20px 60px 20px 235px 32px 40px; }
-    /* line 1671, style.scss */
+    /* line 1613, style.scss */
     .proud-of-logo {
       grid-column: 1/8;
       grid-row: 1/2;
       padding: 0px; }
-    /* line 1676, style.scss */
+    /* line 1618, style.scss */
     .proud-of-suplogo {
       grid-column: 1/8;
       grid-row: 3/4;
       padding: 0px 12px 0px 0px;
       font-size: 14px; }
-    /* line 1682, style.scss */
+    /* line 1624, style.scss */
     .proud-of-projects {
       grid-column: 1/9;
       grid-row: 5/6;
       padding-right: 60px;
       height: 60px; }
-      /* line 1687, style.scss */
+      /* line 1629, style.scss */
       .proud-of-projects ul {
         flex-wrap: wrap;
         gap: 12px; }
-        /* line 1690, style.scss */
+        /* line 1632, style.scss */
         .proud-of-projects ul li {
           padding: 0px 20px 0px 0px; }
-    /* line 1695, style.scss */
+    /* line 1637, style.scss */
     .proud-of-button {
       grid-column: 2/8;
       grid-row: -2/-1;
       padding: 0px 16px; }
-    /* line 1700, style.scss */
+    /* line 1642, style.scss */
     .proud-of-element-title {
       grid-column: 1/9;
       grid-row: 9/12; }
-      /* line 1703, style.scss */
+      /* line 1645, style.scss */
       .proud-of-element-title-name {
         height: 60px;
         padding-bottom: 20px; }
-      /* line 1707, style.scss */
+      /* line 1649, style.scss */
       .proud-of-element-title-description {
         margin-right: 0px; }
-    /* line 1711, style.scss */
+    /* line 1653, style.scss */
     .proud-of-element-about {
       grid-column: 1/8;
       grid-row: 13/14; }
-      /* line 1714, style.scss */
+      /* line 1656, style.scss */
       .proud-of-element-about-instrument {
         padding: 12px 0px 0px 0px;
         margin-right: -12px;
         font-size: 14px; }
-      /* line 1719, style.scss */
+      /* line 1661, style.scss */
       .proud-of-element-about-category {
         padding-right: 84px; }
-      /* line 1722, style.scss */
+      /* line 1664, style.scss */
       .proud-of-element-about-user {
         padding-right: 84px; }
-      /* line 1725, style.scss */
+      /* line 1667, style.scss */
       .proud-of-element-about-system {
         padding: 32px 84px 0px 0px; }
-    /* line 1729, style.scss */
+    /* line 1671, style.scss */
     .proud-of-image {
       grid-column: 1/9;
       grid-row: 7/8;
       padding: 0px; }
-      /* line 1733, style.scss */
+      /* line 1675, style.scss */
       .proud-of-image img {
         width: 85vw;
         height: auto; }
-  /* line 1739, style.scss */
+  /* line 1681, style.scss */
   .discuss-project {
     padding: 0px 16px;
     height: 670px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 32px 80px 32px 40px 20px 90px 20px 300px 56px; }
-    /* line 1744, style.scss */
+    /* line 1686, style.scss */
     .discuss-project-noise {
       background-image: url("../../../images/Noise3.png"); }
-    /* line 1747, style.scss */
+    /* line 1689, style.scss */
     .discuss-project-vector {
       grid-row: 6/7;
       grid-column: 1/-1; }
-    /* line 1751, style.scss */
+    /* line 1693, style.scss */
     .discuss-project-text {
       grid-column: 1/-2;
       grid-row: 2/5; }
-      /* line 1754, style.scss */
+      /* line 1696, style.scss */
       .discuss-project-text-title {
         padding-right: 33vw; }
-    /* line 1758, style.scss */
+    /* line 1700, style.scss */
     .discuss-project-form {
       grid-column: 1/-1;
       grid-row: -3/-2;
       padding: 36px 16px;
       align-items: center; }
-      /* line 1763, style.scss */
+      /* line 1705, style.scss */
       .discuss-project-form-fields {
         margin: -4vw 4vw 0px 4vw;
         flex-direction: column;
         gap: 0px; }
-        /* line 1767, style.scss */
+        /* line 1709, style.scss */
         .discuss-project-form-fields-field {
           width: 84vw;
           margin-left: 3vw; }
-          /* line 1770, style.scss */
+          /* line 1712, style.scss */
           .discuss-project-form-fields-field input {
             width: 84vw; }
-      /* line 1775, style.scss */
+      /* line 1717, style.scss */
       .discuss-project-form-button {
         margin: 4vw 12.5vw 0vw 12.5vw;
         align-items: center;
         padding: 11px 20vw; }
-  /* line 1782, style.scss */
+  /* line 1724, style.scss */
   .stages {
     padding: 32px 16px 32px 20px;
     height: 1500px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 80px 36px 1316px; }
-    /* line 1787, style.scss */
+    /* line 1729, style.scss */
     .stages-title {
       grid-column: 1/-2;
       grid-row: 1/2; }
-    /* line 1791, style.scss */
+    /* line 1733, style.scss */
     .stages-list {
       grid-column: 1/-1;
       grid-row: 3/4; }
-      /* line 1794, style.scss */
+      /* line 1736, style.scss */
       .stages-list ul li {
         width: 100%;
         grid-template-columns: repeat(8, 1fr); }
-      /* line 1798, style.scss */
+      /* line 1740, style.scss */
       .stages-list-inf {
         grid-column: 1/6; }
-        /* line 1800, style.scss */
+        /* line 1742, style.scss */
         .stages-list-inf-option {
           width: 100%; }
-      /* line 1802, style.scss */
+      /* line 1744, style.scss */
       .stages-list-img {
         grid-column: 6/9;
         justify-content: flex-end;
         margin: -24px -24px -24px -24px; }
-  /* line 1809, style.scss */
+  /* line 1751, style.scss */
   .our-team {
     padding: 28px 16px 45px 20px;
     height: 650px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 142px 264px 170px; }
-    /* line 1815, style.scss */
+    /* line 1757, style.scss */
     .our-team-text-sup {
       padding: 20px 16px 0px 0px; }
-    /* line 1818, style.scss */
+    /* line 1760, style.scss */
     .our-team-text-count {
       padding: 316px 16px 0px 0px; }
-      /* line 1821, style.scss */
+      /* line 1763, style.scss */
       .our-team-text-count-element-number {
         font-size: 28px;
         height: 24px; }
-      /* line 1825, style.scss */
+      /* line 1767, style.scss */
       .our-team-text-count-element-description {
         font-size: 14px;
         height: 34px;
         padding: 20px 0px 0px 0px; }
-    /* line 1832, style.scss */
+    /* line 1774, style.scss */
     .our-team-text-ps {
       font-size: 14px;
       padding: 32px 20px 0px 0px; }
-    /* line 1837, style.scss */
+    /* line 1779, style.scss */
     .our-team-video {
       height: 264px; }
-      /* line 1839, style.scss */
+      /* line 1781, style.scss */
       .our-team-video img {
         width: 86vw;
         height: 232px;
         padding: 30px 20px -12px 20px; }
-      /* line 1845, style.scss */
+      /* line 1787, style.scss */
       .our-team-video-miniature img {
         height: 236px; }
-      /* line 1846, style.scss */
+      /* line 1788, style.scss */
       .our-team-video-miniature-play {
         margin-top: 90px; }
-        /* line 1848, style.scss */
+        /* line 1790, style.scss */
         .our-team-video-miniature-play img {
           width: 36px;
           height: 36px; }
-  /* line 1856, style.scss */
+  /* line 1798, style.scss */
   .get-book {
     padding: 50px 32px 56px 32px;
     height: 924px; }
-    /* line 1859, style.scss */
+    /* line 1801, style.scss */
     .get-book-noise {
       background-image: url("../../../images/Noise3.png"); }
-    /* line 1860, style.scss */
+    /* line 1802, style.scss */
     .get-book-content {
       grid-template-columns: repeat(8, 1fr);
       grid-template-rows: 80px 32px 244px 32px 430px; }
-      /* line 1863, style.scss */
+      /* line 1805, style.scss */
       .get-book-content-title {
         grid-column: 1/-2; }
-      /* line 1864, style.scss */
+      /* line 1806, style.scss */
       .get-book-content-form {
         grid-column: 1/-2;
         grid-row: 5/6; }
-        /* line 1867, style.scss */
+        /* line 1809, style.scss */
         .get-book-content-form-button {
           width: 56vw; }
-      /* line 1869, style.scss */
+      /* line 1811, style.scss */
       .get-book-content-img {
         grid-column: 3/6; }
-        /* line 1871, style.scss */
+        /* line 1813, style.scss */
         .get-book-content-img img {
           height: 244px; }
-  /* line 1875, style.scss */
+  /* line 1817, style.scss */
   .faq {
     height: 700px;
     padding: 20px 24px; }
-    /* line 1878, style.scss */
+    /* line 1820, style.scss */
     .faq-questions {
       padding: 0px;
       margin-left: -40px; }
-      /* line 1881, style.scss */
+      /* line 1823, style.scss */
       .faq-questions ul {
         max-height: 576px;
         flex-wrap: nowrap; }
-        /* line 1884, style.scss */
+        /* line 1826, style.scss */
         .faq-questions ul li {
           width: 90vw; }
-      /* line 1886, style.scss */
+      /* line 1828, style.scss */
       .faq-questions-element {
         width: 75vw; }
-  /* line 1889, style.scss */
+  /* line 1831, style.scss */
   footer {
     height: 350px; }
-  /* line 1890, style.scss */
+  /* line 1832, style.scss */
   .footer {
     max-height: 350px;
     justify-content: center;
     padding: 32px 0px; }
-    /* line 1895, style.scss */
+    /* line 1837, style.scss */
     .footer-list {
       flex-wrap: wrap;
       justify-content: stretch; }
-      /* line 1898, style.scss */
+      /* line 1840, style.scss */
       .footer-list li {
         width: 45vw;
         height: 15vw; }
-      /* line 1902, style.scss */
+      /* line 1844, style.scss */
       .footer-list-inf {
         font-size: 14px; }
-    /* line 1904, style.scss */
+    /* line 1846, style.scss */
     .footer-ps {
       margin-top: 0px; } }
