@@ -1,100 +1,103 @@
-console.log("ЗАДАНИЕ 1")
-const students = [
-    { name: 'Павел', age: 20 },
-    { name: 'Иван', age: 20 },
-    { name: 'Эдем', age: 20 },
-    { name: 'Денис', age: 20 },
-    { name: 'Виктория', age: 20 },
-    { age: 40 },
-];
+class CorePizza {
+    name;
+    price;
+    calories;
 
-function pickPropArray(array, property) {
-    let result = [];
-    array.forEach((item) => {
-        if (item.hasOwnProperty(property)) {
-            result.push(item[property])
-        }
-    });
-    return result;
-}
-
-const result = pickPropArray(students, 'name');
-console.log(result);
-
-
-
-console.log("ЗАДАНИЕ 2")
-function createCounter() {
-    let count = 1;
-    return function() {
-        console.log(count++);
-    };
-};
-
-const counter1 = createCounter();
-counter1();
-counter1();
-
-const counter2 = createCounter();
-counter2();
-counter2();
-
-
-
-console.log("ЗАДАНИЕ 3")
-function spinWords(str) {
-    let array = str.split(' ');
-    array.forEach((item, index) => {
-        if (item.length >= 5) array.splice(index, 1, item.split('').reverse().join(''));
-    })
-    console.log(array);
-};
-
-const result1 = spinWords( "Привет от Legacy" );
-console.log(result1); // тевирП от ycageL
-
-const result2 = spinWords( "This is a test" );
-console.log(result2); // This is a test
-
-
-
-console.log("ЗАДАНИЕ 4")
-function findTarget(array, target) {
-    let result =[];
-    for (let i = 0; i < array.length; i++) {
-        let theSecondNumber = target - array[i];
-        array.forEach((item, index) => {
-            if (item == theSecondNumber) result.push(i, index);
-        });
-        if (result !== []) break;
+    constructor(name, price, calories) {
+        this.name = name;
+        this.price = price;
+        this.calories = calories;
     }
-    return result;
 }
 
-console.log(findTarget([2,7,11,15], 9));
+class Topping extends CorePizza {}
 
+class TypeOfPizza extends CorePizza {}
 
+class SizeOfPizza extends CorePizza {}
 
-console.log("ЗАДАНИЕ 5")
-function findPrefix (strs) {
-    //перебираем префиксы первого слова в первых двух циклах, далее проверяем есть ли этот префикс в других словах
-    let result = "";
-    for (let i = 0; i < strs[0].length - 1; i++) {
-        let prefix = strs[0][i];
-        for (let j = i + 1; j < strs[0].length; j++) {
-            prefix += strs[0][j];
-            let inAllWords = true;
-            for (let k = 1; k < strs.length; k++) {
-                if (!strs[k].includes(prefix)) {
-                    inAllWords = false;
-                    break;
-                }
+class Pizza {
+    pizzaType;
+    size;
+    toppings = [];
+
+    constructor(typeOfPizza, sizeOfPizza) {
+        this.pizzaType = typeOfPizza;
+        this.size = sizeOfPizza;
+    }
+
+    addTopping(topping) {
+        this.toppings.push(topping);
+    }
+
+    removeTopping(topping) {
+        for (let i = 0; i < this.toppings.length; i++) {
+            if (this.toppings[i] === topping) {
+                this.toppings.splice(i, 1);
+                break;
             }
-            if (inAllWords && prefix.length > result.length) result = prefix;
         }
     }
-    return result;
+
+    getToppings() {
+        let strToppings = "Добавки:\n";
+        for (let i = 0; i < this.toppings.length; i++) {
+            strToppings += this.toppings[i].name + ",\n";
+        }
+        strToppings = strToppings.substring(0, strToppings.length-2) + ";";
+        console.log(strToppings);
+    }
+
+    getSize() {
+        console.log("Размер пиццы: " + this.size.name);
+    }
+
+    getStuffing() {
+        console.log("Вид пиццы: " + this.pizzaType.name);
+    }
+
+    calculatePrice() {
+        let price = this.pizzaType.price + this.size.price;
+        for (let i = 0; i < this.toppings.length; i++) {
+            price += this.toppings[i].price;
+        }
+        console.log("Цена пиццы: " + price);
+    }
+
+    calculateCalories() {
+        let calories = this.pizzaType.calories + this.size.calories;
+        for (let i = 0; i < this.toppings.length; i++) {
+            calories += this.toppings[i].calories;
+        }
+        console.log("Количество калорий в пицце: " + calories);
+    }
 }
 
-console.log(findPrefix(["цветок","поток","хлопок"]));
-console.log(findPrefix(["собака","гоночная машина","машина"]));
+let margarita = new TypeOfPizza("Маргарита", 500, 300)
+let pepperoni = new TypeOfPizza("Пепперони", 800, 400);
+let bavarian = new TypeOfPizza("Баварская", 700, 450);
+
+let big = new SizeOfPizza("Большая", 200, 200);
+let small = new SizeOfPizza("Маленькая", 100, 100);
+
+let creamyMozzarella = new Topping("Сливочная моцарелла", 50, 30);
+let cheeseCrust = new Topping("Сырный борт", 150, 50);
+let cheddarAndParmesan = new Topping("Чеддер и пармезан", 150, 50);
+let creamyMozzarellaBig = new Topping("Сливочная моцарелла", 100, 50);
+let cheeseCrustBig = new Topping("Сырный борт", 300, 50);
+let cheddarAndParmesanBig = new Topping("Чеддер и пармезан", 300, 50);
+
+console.log("\n");
+let pizza = new Pizza(margarita, big);
+pizza.addTopping(creamyMozzarellaBig);
+pizza.addTopping(cheeseCrustBig);
+pizza.addTopping(cheddarAndParmesanBig);
+pizza.getToppings();
+pizza.removeTopping(creamyMozzarellaBig);
+
+pizza.getToppings();
+pizza.getStuffing();
+pizza.getSize();
+
+pizza.calculatePrice();
+pizza.calculateCalories();
