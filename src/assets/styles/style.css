@@ -1,4 +1,8 @@
-@import "./global.css";
-@import "./fonts.css";
-@import "./utils.css";
+.body {
+  background: antiquewhite; }
 
+.test {
+  font-size: 32px;
+  color: blueviolet; }
+
+/*# sourceMappingURL=style.css.map */

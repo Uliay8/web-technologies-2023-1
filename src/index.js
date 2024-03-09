@@ -83,9 +83,9 @@ let small = new SizeOfPizza("Маленькая", 100, 100);
 let creamyMozzarella = new Topping("Сливочная моцарелла", 50, 30);
 let cheeseCrust = new Topping("Сырный борт", 150, 50);
 let cheddarAndParmesan = new Topping("Чеддер и пармезан", 150, 50);
-let creamyMozzarellaBig = new Topping("Сливочная моцарелла", 100, 50);
-let cheeseCrustBig = new Topping("Сырный борт", 300, 50);
-let cheddarAndParmesanBig = new Topping("Чеддер и пармезан", 300, 50);
+let creamyMozzarellaBig = new Topping("Сливочная моцарелла", 100, 60);
+let cheeseCrustBig = new Topping("Сырный борт", 300, 100);
+let cheddarAndParmesanBig = new Topping("Чеддер и пармезан", 300, 100);
 
 console.log("\n");
 let pizza = new Pizza(margarita, big);
