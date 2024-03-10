@@ -15,15 +15,15 @@
             <span>Pizza</span>
         </div>
         <div class="typesOfPizza">
-            <div class="typeOfPizza">
+            <div class="typeOfPizza" onClick="changeCurrentPizza('margaritaPizza')" id="margaritaPizza">
                 <span class="typeOfPizza-img"><img src="images/margarita.jpg"></span>
                 <span class="typeOfPizza-title">Маргарита</span>
             </div>
-            <div class="typeOfPizza">
+            <div class="typeOfPizza" onClick="changeCurrentPizza('pepperoniPizza')" id="pepperoniPizza">
                 <span class="typeOfPizza-img"><img src="images/pepperoni.jpg"></span>
                 <span class="typeOfPizza-title">Пепперони</span>
             </div>
-            <div class="typeOfPizza">
+            <div class="typeOfPizza" onClick="changeCurrentPizza('bavarianPizza')" id="bavarianPizza">
                 <span class="typeOfPizza-img"><img src="images/bavarian.jpg"></span>
                 <span class="typeOfPizza-title">Баварская</span>
             </div>
@@ -34,26 +34,26 @@
         <div class="sizeOfPizza">
             <span>Выберите размер</span>
             <div class="size-select">
-                <select>
-                    <option value="0">Маленькая</option>
-                    <option value="1">Большая</option>
+                <select onchange="changeSizeOfPizza(this)">
+                    <option value="Маленькая">Маленькая</option>
+                    <option value="Большая">Большая</option>
                 </select>
             </div>
         </div>
         <div class="toppings">
             <span>Добавить по вкусу</span>
             <div class="toppings-items">
-                <div class="toppings-items-item">
+                <div class="toppings-items-item" id="Сливочная моцарелла" onclick="changeToppings('Сливочная моцарелла')">
                     <span class="toppings-items-item-img"><img src="images/creamyMozzarella.jpg"></span>
                     <span class="toppings-items-item-title">Сливочная моцарелла</span>
                     <span class="toppings-items-item-price">руб.</span>
                 </div>
-                <div class="toppings-items-item">
+                <div class="toppings-items-item" id="Сырный борт" onclick="changeToppings('Сырный борт')">
                     <span class="toppings-items-item-img"><img src="images/cheeseCrust.jpg"></span>
                     <span class="toppings-items-item-title">Сырный борт</span>
                     <span class="toppings-items-item-price">руб.</span>
                 </div>
-                <div class="toppings-items-item">
+                <div class="toppings-items-item" id="Чеддер и пармезан" onclick="changeToppings('Чеддер и пармезан')">
                     <span class="toppings-items-item-img"><img src="images/cheddarAndParmesan.jpg"></span>
                     <span class="toppings-items-item-title">Чеддер и пармезан</span>
                     <span class="toppings-items-item-price">руб.</span>
@@ -61,7 +61,7 @@
             </div>
         </div>
         <div class="buttonCalculate">
-            <button class="buttonCalculate-button">Добавить в корзину</button>
+            <button class="buttonCalculate-button" id="buttonCalculate">Добавить в корзину</button>
         </div>
     </div>
 
