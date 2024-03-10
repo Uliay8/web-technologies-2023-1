@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pizza</title>
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="main">
 
@@ -15,7 +15,7 @@
             <span>Pizza</span>
         </div>
         <div class="typesOfPizza">
-            <div class="typeOfPizza" onClick="changeCurrentPizza('margaritaPizza')" id="margaritaPizza">
+            <div class="typeOfPizza currentPizza" onClick="changeCurrentPizza('margaritaPizza')" id="margaritaPizza">
                 <span class="typeOfPizza-img"><img src="images/margarita.jpg"></span>
                 <span class="typeOfPizza-title">Маргарита</span>
             </div>
@@ -32,12 +32,11 @@
 
     <div class="right-column">
         <div class="sizeOfPizza">
-            <span>Выберите размер</span>
-            <div class="size-select">
-                <select onchange="changeSizeOfPizza(this)">
-                    <option value="Маленькая">Маленькая</option>
-                    <option value="Большая">Большая</option>
-                </select>
+            <span>Выберите размер<br></span>
+            <div class="selector-size">
+                <input type="checkbox" id="selector-size-checkbox">
+                <label class="selector-size-switch" data-label-left="Маленькая" data-label-right="Большая"
+                       onclick="changeSizeOfPizza(this)"></label>
             </div>
         </div>
         <div class="toppings">
@@ -61,7 +60,7 @@
             </div>
         </div>
         <div class="buttonCalculate">
-            <button class="buttonCalculate-button" id="buttonCalculate">Добавить в корзину</button>
+            <button class="buttonCalculate-button" id="buttonCalculate">Добавить в корзину<br>600 руб. (400 кКал)</button>
         </div>
     </div>
 

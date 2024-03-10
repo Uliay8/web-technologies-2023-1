@@ -68,13 +68,47 @@ body {
     font-size: 24px;
     font-weight: 700; }
 
-.size-select {
-  margin: 16px 0px;
-  appearance: none;
-  width: 20vw; }
-  .size-select select {
+.selector-size {
+  margin: 12px; }
+  .selector-size input {
+    display: none; }
+  .selector-size-switch {
+    display: inline-block;
+    height: 36px;
     width: 100%;
-    font-size: 18px; }
+    position: relative;
+    border-radius: 25px;
+    background: #f0ebe6; }
+    .selector-size-switch:before {
+      content: attr(data-label-left);
+      display: inline-block;
+      background: white;
+      border-radius: 25px;
+      width: 49%;
+      height: 28px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 28px; }
+    .selector-size-switch:after {
+      content: attr(data-label-right);
+      display: inline-block;
+      border-radius: 25px;
+      width: 49%;
+      height: 28px;
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      z-index: 5;
+      text-align: center;
+      line-height: 28px;
+      font-size: 18px; }
+    .selector-size-switch-big:before {
+      background: none; }
+    .selector-size-switch-big:after {
+      background: white; }
 
 .toppings span {
   font-size: 24px;

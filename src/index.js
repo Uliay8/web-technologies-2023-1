@@ -10,8 +10,7 @@ class CorePizza {
     }
 }
 
-class Topping extends CorePizza {
-}
+class Topping extends CorePizza {}
 
 class TypeOfPizza extends CorePizza {}
 
@@ -69,7 +68,6 @@ class Pizza {
             if (this.size == small) price += this.toppings[i].price;
             else {price += this.toppings[i].price*2;}
         }
-        console.log("Цена пиццы: " + price);
         return price
     }
 
@@ -79,7 +77,6 @@ class Pizza {
             if (this.size == small) calories += this.toppings[i].calories;
             else {calories += this.toppings[i].calories*2;}
         }
-        console.log("Количество калорий в пицце: " + calories);
         return calories
     }
 }
@@ -94,30 +91,12 @@ let small = new SizeOfPizza("Маленькая", 100, 100);
 let creamyMozzarella = new Topping("Сливочная моцарелла", 50, 30);
 let cheeseCrust = new Topping("Сырный борт", 150, 50);
 let cheddarAndParmesan = new Topping("Чеддер и пармезан", 150, 50);
-// let creamyMozzarellaBig = new Topping("Сливочная моцарелла", 100, 60);
-// let cheeseCrustBig = new Topping("Сырный борт", 300, 100);
-// let cheddarAndParmesanBig = new Topping("Чеддер и пармезан", 300, 100);
 
-// console.log("\n");
-// let pizza = new Pizza(margarita, big);
-// pizza.addTopping(creamyMozzarellaBig);
-// pizza.addTopping(cheeseCrustBig);
-// pizza.addTopping(cheddarAndParmesanBig);
-// pizza.getToppings();
-// pizza.removeTopping(creamyMozzarellaBig);
-//
-// pizza.getToppings();
-// pizza.getStuffing();
-// pizza.getSize();
-//
-// pizza.calculatePrice();
-// pizza.calculateCalories();
 
-let currentPizza = new Pizza(pepperoni, small);
+let currentPizza = new Pizza(margarita, small);
 const buttonCalculate = document.getElementById("buttonCalculate");
-
 let arrayPizzaId = ['margaritaPizza', 'pepperoniPizza', 'bavarianPizza'];
-let arrayToppingId = ['Сливочная моцарелла', 'Сырный борт', 'Чеддер и пармезан']
+
 function typeFromIdPizza (i) {
     switch (i) {
         case 'margaritaPizza': return margarita;
@@ -130,12 +109,6 @@ function toppingFromToppingId (i) {
         case 'Сливочная моцарелла': return creamyMozzarella;
         case 'Сырный борт': return cheeseCrust;
         case 'Чеддер и пармезан': return cheddarAndParmesan;
-    }
-}
-function sizeFromNameSize (i) {
-    switch (i) {
-        case 'Маленькая': return small;
-        case 'Большая': return big;
     }
 }
 function displayOnButton() {
@@ -153,12 +126,18 @@ function changeCurrentPizza(idOfPizza) {
     }
 }
 
-function changeSizeOfPizza(someOption) {
-    let nameofSize = someOption.options[someOption.selectedIndex].value;
-    if (currentPizza.getSize() != nameofSize) {
-        currentPizza.setSize(sizeFromNameSize(nameofSize));
-        displayOnButton();
+function changeSizeOfPizza(labelSize) {
+    let size;
+    if (labelSize.classList.contains("selector-size-switch-big")) {
+        labelSize.classList.remove("selector-size-switch-big");
+        size = small;
     }
+    else {
+        labelSize.classList.add("selector-size-switch-big");
+        size =big;
+    }
+    currentPizza.setSize(size);
+    displayOnButton();
 }
 function changeToppings(idOfTopping) {
     if (!document.getElementById(idOfTopping).classList.contains("currentTopping")) {
