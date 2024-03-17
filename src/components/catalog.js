@@ -35,6 +35,7 @@ export class Catalog {
                 this.loadItems()
             }
         }
+        window.onpopstate = handleLocation;
 
         this.#paginationEl.addEventListener('click', (event) => {
             const item = event.target.dataset.catalogPaginationPage ? event.target : event.target.closest('[data-catalog-pagination-page]')
@@ -50,7 +51,8 @@ export class Catalog {
             this.loadItems()
         })
 
-        this.loadItems()
+        this.loadItems();
+        //handleLocation();
     }
 
     getPage () {
@@ -71,14 +73,13 @@ export class Catalog {
         window.history.pushState({}, '', url)
     }
 
-    loadItems () {
+    async loadItems () {
         try {
-            this.#getItems({ limit: this.limit, page: this.#page })
-                .then(({ items, total }) => {
-                    this.#total = total
-                    this.renderItems(items)
-                    this.renderPagination()
-        })
+            const response =
+                await this.#getItems({ limit: this.limit, page: this.#page });
+            this.#total = response.total;
+            this.renderItems(response.items);
+            this.renderPagination();
         } catch (error) {
             console.log(error);
         }
@@ -112,4 +113,22 @@ export class Catalog {
 
         this.#paginationEl.innerHTML = html
     }
+}
+
+// const  route = (event) => {
+//     event = event || window.event;
+//     event.preventDefault();
+//     window.history.pushState({}, "", event.target.href);
+//     handleLocation();
+// }
+//window.route = route;
+const routes = {
+    404: "/404.html",
+    "/posts?id=2": "/posts.html?id=2",
+}
+const handleLocation = async () => {
+    // const path = window.location.pathname;
+    // const route = routes[path] || routes[404];
+    // const html = await fetch(route).then((data) => data.text());
+    // document.getElementById("catalog").innerHTML = html;
 }

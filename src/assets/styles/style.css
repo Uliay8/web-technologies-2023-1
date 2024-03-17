@@ -1,14 +1,6 @@
-@import "./global.css";
-@import "./fonts.css";
-@import "./utils.css";
-@import "./catalog.css";
-@import "./post.css";
-@import "./photo.css";
-
-.test {
-    color: yellow !important;
-}
-
-.test {
-    color: red !important;
-}
+@import url(/src/assets/styles/post.css);
+@import url(global.css);
+@import url(fonts.css);
+@import url(utils.css);
+@import url(catalog.css);
+@import url(photo.css);
