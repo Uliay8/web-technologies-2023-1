@@ -4,14 +4,18 @@ const renderPostItem = item => `
     <a  
         href="posts.html?id=${item.id}"
         class="post-item"
+        style="text-decoration: none;
+        color: black;"
     >
-        <span class="post-item__title">
+        <span class="post-item__title"
+        style="font-size: 25px;
+        font-weight: 600;">
             ${item.title}
         </span><br>
 
         <span class="post-item__body">
             ${item.body}
-        </span><br><br>
+        </span><br><br><hr>
     </a>
 `
 

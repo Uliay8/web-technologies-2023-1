@@ -8,10 +8,10 @@ const renderPost = item => `
         ${item.body}
     </div>
     <div class="other-post-info">
-        ID пользователя: ${item.userId}
+        Пользователь: ${item.userId}
     </div>
     <div class="other-post-info">
-        ID поста: ${item.id}
+        Пост: ${item.id}
     </div>
 `;
 
@@ -22,8 +22,8 @@ const renderComment = item => {
             <div class="email-comment">${item[i].email}</div>
             <div class="name-comment">${item[i].name}</div>
             <div class="body-comment">${item[i].body}</div>
-            <div class="id-comment">ID комментария: ${item[i].id}</div>
-            <div class="id-comment">ID поста: ${item[i].postId}</div>
+            <div class="id-comment">Комментарий: ${item[i].id}</div>
+            <div class="id-comment">Пост: ${item[i].postId}</div>
         </div>`;
     }
     return res;
