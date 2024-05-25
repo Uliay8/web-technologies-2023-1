@@ -23,6 +23,7 @@ class Auth {
     }
 
     static async reg (values) {
+        console.log(values);
         const response = await AuthRepository.reg(values)
         Auth.token = response.data.accessToken
         location.user()

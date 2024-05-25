@@ -17,9 +17,63 @@
         <a href="/user.html">user</a>
         <a href="/todos.html">todos</a>
     </nav>
+    <button onclick="clickButtonReg()">Reg</button>
+    <button onclick="clickButtonAuth()">Auth</button>
 </header>
 
 <main class="main">
 </main>
 </body>
+<script src="./src/services/api.js"></script>
+<script>
+    function clickButtonReg(){
+        console.log('3453');
+        reg();
+    };
+    function clickButtonAuth(){
+        console.log('34');
+        auth();
+    };
+    async function reg() {
+        const result = await Promise.all([
+            await new Promise(resolve => setTimeout(() => resolve(), 200)),
+            await fetch("http://localhost:8000/api/registration",
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json;charset=utf-8'
+                    },
+                    body: JSON.stringify({
+                        email:"asdsad@mail.ru",
+                        password:"fgdsfg12",
+                        age: 21,
+                        name:"выавыа"})
+                })
+        ])
+        // регистрация 5 полей, отправить запрос. может токен вернет
+            //такой же с авторизацией че там надо, вернет токен
+        //этот токен засунуть в headers
+
+        console.log(result[1]);
+    };
+
+    async function auth() {
+        const result = await Promise.all([
+            await new Promise(resolve => setTimeout(() => resolve(), 200)),
+            await fetch("http://localhost:8000/api/login",
+                {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json;charset=utf-8'
+                    },
+                    body: JSON.stringify({ email:"asdsad@mail.ru",
+                        password:"fgdsfg12"
+                    })
+                })
+        ])
+        const promise = result[1].json()
+        const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MCwib…jM4fQ.kpnm3HmG5Xj9XMY-9nDbZnrivQsVBxaVgsOzZXCm-Pk', refreshToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MCwib…DM4fQ.IJ07PP778mLhrAyrSdug2QIh-G4KdIqyneYEaC-rzLI', user: {…}}"
+        console.log(promise, token);
+    }
+</script>
 </html>

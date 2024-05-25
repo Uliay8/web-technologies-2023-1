@@ -13,7 +13,7 @@ const init = async () => {
     }
 
     const formEl = document.getElementById('login-form')
-
+    // console.log("reg")
     new Form(formEl, {
         'email': (value) => {
             if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value))) {
@@ -62,6 +62,7 @@ const init = async () => {
 
             return false
         }
+
     }, (values) => {
         delete values['password-repeat']
         Auth.reg(values)

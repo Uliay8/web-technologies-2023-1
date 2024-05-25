@@ -11,7 +11,7 @@ const api = async (url, options = {}) => {
     if (token) {
         headers["Authorization"] = `Bearer ${token}`
     }
-
+    console.log(config.BASE_URL + url);
     const result = await Promise.all([
         await new Promise(resolve => setTimeout(() => resolve(), 200)),
         await fetch(config.BASE_URL + url, {
