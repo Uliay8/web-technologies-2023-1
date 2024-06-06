@@ -1,140 +1,192 @@
 <?php
 
-$title = "lesson17";
+$title = "lesson18";
 
 //////////////////////////////////////////// Задание 1///////////////////////////////////////////////////////////////////
-echo("<h3>Задание 1</h3>");
 
-$a = 9;
-$b = -1;
-
-if ($a >= 0 && $b >= 0) {
-    if ($a > $b) {
-        echo $a - $b;
-    } else {
-        echo $b - $a;
-    } 
-} 
-elseif ($a < 0 && $b < 0) {
-    echo $a * $b;
-} 
-else {
-    echo $a + $b;
-}
-echo("<hr>");
-
-////////////////////////////////////////////////Задание 2////////////////////////////////////////////////////////////////
-echo("<h3>Задание 2</h3>");
-
-function getString($a1) {
-    $result = "";
-    if ($a1 <= 15 && $a1 >=0) {
-        while ($a1<=15) {
-            $result = $result . $a1 . " ";
-            $a1 = $a1 + 1;
-        }
-    } else {
-        $result = "Переменая a не находится в диапазоне 0..15!";
-    }
-
-    return $result;
-
-}
-
-$a = 6;
-switch ($a) {
-    case 0:
-        echo getString($a);
-        break;
-    case 15:
-        echo '15';
-        break;
-    default:
-        echo getString($a);
-        break;
-}
-echo("<hr>");
-
-/////////////////////////////////////////////// Задание 3///////////////////////////////////////////////////////////
-echo("<h3>Задание 3</h3>");
-
-function add($a, $b) {
-    return $a + $b;
-}
-
-function subtract($a, $b) {
-    return $a - $b;
-}
-
-function multiply($a, $b) {
-    return $a * $b;
-}
-
-function divide($a, $b) {
-    if ($b == 0)
-        return 'На ноль делить нельзя';
-    return $a / $b;
-}
-
-echo("<p>Сложение: " . add(8, 1) . "</p>");
-echo("<p>Вычитание: " . subtract(8, 2) . "</p>");
-echo("<p>Умножение: " . multiply(7, 9) . "</p>");
-echo("<p>Деление: " . divide(33, 3) . "</p>");
-echo("<hr>");
-
-///////////////////////////////////////////////// Задание 4/////////////////////////////////////////////////////////
-echo("<h3>Задание 4</h3>");
-
-function mathOperation($arg1, $arg2, $operation)
+function fun1()
 {
-    switch ($operation) {
-        case '+':
-            return add($arg1, $arg2);
-        case '-':
-            return subtract($arg1, $arg2);
-        case '*':
-            return multiply($arg1, $arg2);
-        case '/':
-            return divide($arg1, $arg2);
-        default: 
-            return "Неверно указана операция";
+    $i = 0;
+    do {
+        if ($i == 0) {
+            echo $i . ' – это ноль.';
+        } elseif ($i % 2 == 0) {
+            echo $i . ' – чётное число.';
+        } else {
+            echo $i . ' – нечётное число.';
+        }
+        echo '<br>';
+        $i++;
+    } while ($i <= 10);
+}
+
+//////////////////////////////////////////// Задание 2///////////////////////////////////////////////////////////////////
+
+$dict = [
+    'Московская область' => [
+        'Москва',
+        'Зеленоград',
+        'Клин'
+    ],
+    'Ленинградская область' => [
+        'Санкт-Петербург',
+        'Всеволожск',
+        'Павловск',
+        'Кронштадт'
+    ],
+    'Рязанская область' => [
+        'Рязань',
+        'Скопин',
+        'Рыбное',
+        'Шилово',
+        'Новомичуринск'
+    ],
+    'Красноярский край' => [
+        'Красноярск',
+        'Кодинск',
+        'Канск',
+        'Енисейск',
+        'Норильск'
+    ]
+];
+function fun2($dict)
+{
+    foreach ($dict as $reg => $cities) {
+        echo "<h4>{$reg}:<br></h4>";
+        echo implode(', ', $cities) . '.';
+        echo '<br>';
     }
 }
-echo mathOperation(2, 8, '/');
-echo("<hr>");
 
-////////////////////////////////////////////////////////// Задание 5////////////////////////////////////////////////////
-$year12 = date('Y');
+//////////////////////////////////////////// Задание 3///////////////////////////////////////////////////////////////////
 
-/////////////////////////////////////////////////////////// Задание 6//////////////////////////////////////////////////////
-echo("<h3>Задание 6</h3>");
+$text = 'защищающийся бобёр сломалъ челюсть';
 
-function power($val, $pow) {
-    return  $val ** $pow;
+function fun3($text)
+{
+    $letters = array(
+        'а' => 'a', 'б' => 'b', 'в' => 'v',
+        'г' => 'g', 'д' => 'd', 'е' => 'e',
+        'ё' => 'yo', 'ж' => 'zh', 'з' => 'z',
+        'и' => 'i', 'й' => 'j', 'к' => 'k',
+        'л' => 'l', 'м' => 'm', 'н' => 'n',
+        'о' => 'o', 'п' => 'p', 'р' => 'r',
+        'с' => 's', 'т' => 't', 'у' => 'u',
+        'ф' => 'f', 'х' => 'x', 'ц' => 'c',
+        'ч' => 'ch', 'ш' => 'sh', 'щ' => 'shh',
+        'ъ' => '``', 'ы' => 'y', 'ь' => '`',
+        'э' => 'e`', 'ю' => 'yu', 'я' => 'ya'
+    );
+    $chars = preg_split('//u', $text, -1, PREG_SPLIT_NO_EMPTY);
+    $res = '';
+    foreach ($chars as $val) {
+        $res .= isset($letters[$val]) ? $letters[$val] : $val;
+    }
+    return $res;
 }
-echo(power(2, 3));
-echo("<hr>")
 
-?>
+//////////////////////////////////////////// Задание 4///////////////////////////////////////////////////////////////////
 
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $title; ?></title>
-</head>
-<body>
-<h3>Задание 5</h3>
-<p>Год (1 способ): <?php echo date('Y'); ?></p>
-<p>Год (1.2 способ): <?= $year12 ?></p> 
-<p>Год (2 способ): <?= $year2 ?></p>
-<?php
-$year3 = date('Y');
-$content = file_get_contents('ForTask5.html');
-$content = str_replace('{{ year }}', $year3, $content);
-echo $content;
-?>
-<?php require('forTask5(4).php') ?>
-</body>
-</html>
+$menu =  [
+    [
+        'title' => 'Продукт 1',
+        'link' => 'menu_1',
+        'children' => [[
+            'title' => 'Подпродукт 1',
+            'link' => 'menu_1-1',
+            'children' => [
+                [
+                    'title' => 'Подподпродукт 1.1',
+                    'link' => 'menu_1-1-1',
+                    'children' => [
+                        [
+                            'title' => 'Подподподпродукт 1.1.1',
+                            'link' => 'menu_1-1-1-1',
+                        ]
+                    ]
+                ]
+            ],
+            'title' => 'Подпродукт 2',
+            'link' => 'menu_1-2',
+            'children' => [
+                [
+                    'title' => 'Подподпродукт 2.1',
+                    'link' => 'menu_1-2-1',
+                    'children' => [
+                        [
+                            'title' => 'Подподподпродукт 2.1.1',
+                            'link' => 'menu_1-2-1-1',
+                        ],
+                        [
+                            'title' => 'Подподподпродукт 2.1.2',
+                            'link' => 'menu_1-2-1-2',
+                        ]
+                    ]
+                ]
+            ]
+        ]],
+    ],
+    [
+        'title' => 'Продукт 2',
+        'link' => 'menu_2',
+        'children' => [
+            [
+                'title' => 'Подпродукт 1',
+                'link' => 'menu_2-1',
+                'children' => [
+                    [
+                        'title' => 'Подподпродукт 1.1',
+                        'link' => 'menu_2-1-1',
+                    ]
+                ],
+                [
+                    [
+                        'title' => 'Подподподпродукт 1.1.1',
+                        'link' => 'menu_2-1-1-1',
+                    ]
+                ],
+            ]
+        ]
+    ],
+    [
+        'title' => 'Продукт 3',
+        'link' => 'menu_3',
+    ]
+];
+
+function createMenu($menu)
+{
+    echo '<ul>';
+    foreach ($menu as $value) {
+        echo '<li>';
+        echo "<a href='{$value['link']}'> {$value['title']} </a>";
+        if (isset($value['children'])) {
+            createMenu($value['children']);
+        }
+        echo '</li>';
+    }
+    echo '</ul>';
+}
+
+//////////////////////////////////////////// Задание 6///////////////////////////////////////////////////////////////////
+
+function fun6($dict)
+{
+    foreach ($dict as $reg => $cities) {
+        $array = array();
+        echo "<h4>{$reg}:<br></h4>";
+        foreach ($cities as $city) {
+            if (preg_match('/К/', $city)) {
+               $array[] = $city ;
+            }
+        }
+        echo implode(', ', $array) . '.';
+        echo '<br>';
+        unset($array);
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+include('sample.php'); // сюда включаем шаблон (без php)
