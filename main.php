@@ -110,9 +110,14 @@ $year12 = date('Y');
 echo("<h3>Задание 6</h3>");
 
 function power($val, $pow) {
-    return  $val ** $pow;
+    if ($pow == 1) {
+        return $val;
+    }
+    else {
+        return  $val * power($val, $pow - 1);
+    }
 }
-echo(power(2, 3));
+echo(power(3, 3));
 echo("<hr>")
 
 ?>
