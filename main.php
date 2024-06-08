@@ -113,11 +113,13 @@ function power($val, $pow) {
     if ($pow == 1) {
         return $val;
     }
-    else {
+    else if ($pow == 0){
+        return 1;
+    }else {
         return  $val * power($val, $pow - 1);
     }
 }
-echo(power(3, 3));
+echo(power(3, 0));
 echo("<hr>")
 
 ?>
